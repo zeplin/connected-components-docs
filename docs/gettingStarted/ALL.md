@@ -1,10 +1,13 @@
-# Getting Started
+# Getting Started on all platforms/frameworks
+
+This guide covers how to get started with Connected Components for any platform/framework.
 
 ## 1. Prepare configuration file
 
 The first thing we'll do is to create a JSON configuration file in our repository that maps components in our codebase to the components in Zeplin.
 
 You can either prepare the configuration file:
+
 - Manually
 - Use [Zeplin Visual Studio Code extension]() _(Recommended)_
 
@@ -25,6 +28,7 @@ We recommend creating your Zeplin configuration file under the `.zeplin` folder 
 If you use the Visual Studio Code extension, it should prompt you to create the configuration file. You can also use the “Create Zeplin Configuration File” command by pressing “Command/Ctrl + Shift + P”. After creating the configuration file, make sure to click the “Login” link on top of the file to authenticate with your Zeplin account.
 
 In a bit, we'll start filling out the configuration file:
+
 - `projects` and `styleguides` keys are the identifiers of projects and styleguides we'll use components from.
 - `components` are the component files in our codebase.
 
@@ -81,7 +85,7 @@ Now it's time to connect the component we just added, to a component in Zeplin. 
 
 Let's open the styleguide (or the project) we added and copy the name of the component in Zeplin. In our example, our component's name is “Controls / Button / Primary”. Here's how it looks like in Zeplin:
 
-<img src="img/zeplinComponents.png" alt="Components in Zeplin" width="800" />
+<img src="../../img/zeplinComponents.png" alt="Components in Zeplin" width="800" />
 
 Let's add this name to the `zeplinNames` list:
 
@@ -182,51 +186,9 @@ Now, we'll update our configuration file to use these plugins. We can do so by a
 
 ☝️ _It is possible to use Zeplin CLI without any plugins but the plugins will drastically improve the amount of information your team will have access to in Zeplin._
 
-Before we run the Zeplin CLI tool, we have an optional step that lets you display various links for each component, e.g. to your internal Wiki, GitHub repository and so on.
+Next up, we'll run the CLI tool!
 
-## 4. Add links _(Optional)_
-
-We'll now add links to our components to be displayed within Zeplin. Components can be linked to any website, including your internal wiki, public Design System website and so on.
-
-There are also predefined links that Zeplin supports, like GitHub, which can be added really simply. Let's add the `github` key to our configuration file, like so:
-
-```json
-    {
-        "plugins": [
-            {
-                "name": "@zeplin/cli-connect-react-plugin"
-            },
-            {
-                "name": "@zeplin/cli-connect-storybook-plugin",
-                "config": {
-                    "url": "http://localhost:9009",
-                    "startScript": "storybook"
-                }
-            }
-        ],
-        "projects": [],
-        "styleguides": [
-            "5cd486b18a64c1414be004fb"
-        ],
-        "components": [
-            {
-                "path": "src/components/Button/Button.js",
-                "zeplinNames": [
-                    "Controls / Button / Primary"
-                ]
-            }
-        ],
-        "github": {
-            "repository": "example/react-components"
-        }
-    }
-```
-
-By just adding this one line, Zeplin will now display links to the source code in GitHub for each component.
-
-☝️ _To learn more about how to add custom links, check out our [Configuration file documentation](CONFIGURATION_FILE.md)._
-
-## 5. Run Zeplin CLI
+## 4. Run Zeplin CLI
 
 It's time! Let's **run the CLI tool and see Connected Components in action** within Zeplin. 🎉
 
@@ -238,17 +200,32 @@ zeplin connect
 
 Now head back to Zeplin and click on one of the components you connected. You should be able to see an output like so:
 
-<img src="img/zeplinConnectedComponent.png" alt="Connected component in Zeplin" width="600" />
+<img src="../../img/zeplinConnectedComponent.png" alt="Connected component in Zeplin" width="600" />
 
-Hope this Getting Started guide was helpful, reach out to us at [support@zeplin.io](mailto:support@zeplin.io) if you have any questions or feedback.
+## 5. Add links _(Optional)_
+
+Connected Components also lets you add links to various sources like your repository, wiki and so on. In the screenshot above, notice that we have links to GitHub and Storybook.
+
+To add links to your components, check out these guides:
+
+- [Adding repository links](../link/REPOSITORY.md), e.g. GitHub, GitLab, Bitbucket
+- [Adding custom links](../link/CUSTOM.md), e.g. internal Design System wiki
+- [Adding Storybook links](../link/STORYBOOK.md)
+
+## 6. Connect more components
+
+Now that we connected our very first component, you can go ahead and connect more! Check out the section [Add component from codebase](#add-component-from-codebase) if you need any help.
+
+Hope this getting started guide was helpful, reach out to us at [support@zeplin.io](mailto:support@zeplin.io) if you have any questions or feedback.
 
 For further details on how to customize the configuration file, check out the [Configuration file documentation](CONFIGURATION_FILE.md).
 
-# Troubleshooting
+## Troubleshooting
 
 If you run into any issues while running the `zeplin connect` command, make sure that you have all the plugins installed. All [plugins](README.md#Plugins) have installation instructions within their repositories.
 
-# Related resources
+## Related resources
+
 - [Configuration file documentation](CONFIGURATION_FILE.md)
 - [Plugins](README.md#Plugins)
 - [Build your own plugin](https://github.com/zeplin/cli/blob/master/PLUGIN.md)
