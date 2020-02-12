@@ -2,13 +2,13 @@
 
 ## 1. Prepare configuration file
 
-The first thing we'll do is to create a JSON configuration file in our repository that maps components in our codebase to the components in Zeplin.
+First we'll create a JSON configuration file in our repository that maps components in that codebase to the components in Zeplin.
 
-You can either prepare the configuration file:
-- Manually
+Configuration file preparation:
 - Use [Zeplin Visual Studio Code extension]() _(Recommended)_
+- Manual
 
-In this guide, we'll prepare the file manually, while also mentioning how you can use the extension to simplify all of the steps.
+In this guide, we'll prepare the file **manually**, while also mentioning how you can use the extension to simplify all of the steps.
 
 ### Create configuration file
 
@@ -22,15 +22,16 @@ We recommend creating your Zeplin configuration file under the `.zeplin` folder 
 }
 ```
 
-If you use the Visual Studio Code extension, it should prompt you to create the configuration file. You can also use the “Create Zeplin Configuration File” command by pressing “Command/Ctrl + Shift + P”. After creating the configuration file, make sure to click the “Login” link on top of the file to authenticate with your Zeplin account.
-
-In a bit, we'll start filling out the configuration file:
-- `projects` and `styleguides` keys are the identifiers of projects and styleguides we'll use components from.
-- `components` are the component files in our codebase.
+If you use the Visual Studio Code extension, it will prompt you to create the configuration file. You can also use “Command/Ctrl + Shift + P” and select the “Create Zeplin Configuration File” command. After creating the configuration file, make sure to click the “Login” link on top of the file to authenticate with your Zeplin account.
 
 ### Add projects or styleguides
 
-Now, let's add Zeplin projects or styleguides to the configuration file. If you're using [Global Styleguides](https://blog.zeplin.io/announcing-global-styleguides-connecting-design-systems-to-engineering-65ad22bd0076), adding your styleguide(s) will be enough. If instead your components are under projects, you can add all your projects as well. In this example, we'll only add one styleguide.
+Let's start filling out the configuration file:
+
+- `projects` and `styleguides` keys are the identifiers of Zeplin projects and styleguides we'll use components from.
+- `components` are the component files in our codebase.
+
+If you're using [Global Styleguides](https://blog.zeplin.io/announcing-global-styleguides-connecting-design-systems-to-engineering-65ad22bd0076), adding your styleguide(s) will be enough. If instead your components are under projects, you can add all your projects as well. In this example, we'll only add one styleguide.
 
 To add projects or styleguides, we need their identifiers. If you're not using the Visual Studio Code extension, the easiest way to find the identifier of a Zeplin project or a styleguide is to open them in Zeplin's [Web app](https://app.zeplin.io). Look for the URL in the address bar, which should look like so: `https://app.zeplin.io/styleguide/5cd486b18a64c1414be004fb`. The identifier after `styleguide/` (or `project/`) is the identifier we're looking for.
 
