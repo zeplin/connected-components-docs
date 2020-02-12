@@ -44,6 +44,7 @@ A base URL for a custom component link, e.g. wiki.
 | --- | --- | --- |
 | `name` | `string` _(Optional)_ | Name of the link to be displayed in Zeplin |
 | `type` | `string` | Custom type for a link you define, e.g. `wiki` |
+| `url` | `string` | Base URL of the link, e.g. `https://wiki.example.com/design-system` |
 
 Once you define a link, you can set the URL paths for each component like so:
 
