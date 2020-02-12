@@ -34,7 +34,7 @@ A plugin to use with [Zeplin CLI](https://github.com/zeplin/cli).
 | Property | Type | Description |
 | --- | --- | --- |
 | `name` | `string` | npm package name of the plugin, e.g. `@zeplin/cli-connect-react-plugin` |
-| `config` | `string` _(Optional)_ | Configuration for the plugin—see plugin's documentation to learn more |
+| `config` | `string` _(Optional)_ | Configuration for the plugin—see [Plugin's documentation](https://github.com/zeplin/cli/blob/master/PLUGIN.md) to learn more |
 
 ### `Link`
 
