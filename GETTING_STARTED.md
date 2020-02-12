@@ -37,7 +37,7 @@ To add projects or styleguides, we need their identifiers. If you're not using t
 
 If you're using the Visual Studio Code extension, simply click “Add styleguide” or “Add project” and you'll be presented with a list.
 
-After adding projects or styleguides to our configuration file, it should look like so:
+After we add the styleguide to our configuration file, it should look like so:
 
 ```json
 {
@@ -49,13 +49,13 @@ After adding projects or styleguides to our configuration file, it should look l
 }
 ```
 
-☝️ _If you have a styleguide tree and want to connect to all the components in the tree, adding a child styleguide to the configuration should be enough._
+☝️ _If you have multiple related styleguides and want to connect all parent components, adding the child styleguide to the configuration is enough._
 
 ### Add component from codebase
 
 Adding a component from your codebase to the configuration file is pretty straightforward—we'll add an object to the `components` list.
 
-In this example, we'll add a React file but you can add any file that represents your component based on your platform/framework. Let's update our configuration file to look like so:
+In this example, we'll add a React file but you can add any file from any platform or framework. Let's update our configuration file to look like so:
 
 ```json
 {
@@ -72,7 +72,7 @@ In this example, we'll add a React file but you can add any file that represents
 }
 ```
 
-If you're using the Visual Studio Code extension, click the “Add component” link which will list all the files in your repository. Pick the one you want and your configuration file should look like above.
+If you're using the Visual Studio Code extension click “Add component", this will list all the files in your codebase and you can pick the one you want.
 
 Next up, we'll populate the `zeplinNames` key.
 
@@ -84,7 +84,7 @@ Let's open the styleguide (or the project) we added and copy the name of the com
 
 <img src="img/zeplinComponents.png" alt="Components in Zeplin" width="800" />
 
-Let's add this name to the `zeplinNames` list:
+Let's go ahead and add this name to the `zeplinNames` list:
 
 ```json
 {
@@ -181,15 +181,15 @@ Now, we'll update our configuration file to use these plugins. We can do so by a
 }
 ```
 
-☝️ _It is possible to use Zeplin CLI without any plugins but the plugins will drastically improve the amount of information your team will have access to in Zeplin._
+☝️ _It is possible to use the Zeplin CLI without plugins, but plugins generate the documentation and snippets communicated to developers._
 
 Before we run the Zeplin CLI tool, we have an optional step that lets you display various links for each component, e.g. to your internal Wiki, GitHub repository and so on.
 
 ## 4. Add links _(Optional)_
 
-We'll now add links to our components to be displayed within Zeplin. Components can be linked to any website, including your internal wiki, public Design System website and so on.
+We'll now add links to our components. Components can be linked to any website, including your internal wiki for documentation, public Design System website and so on.
 
-There are also predefined links that Zeplin supports, like GitHub, which can be added really simply. Let's add the `github` key to our configuration file, like so:
+There are also predefined links that Zeplin supports, like GitHub, which can be easily added. Let's add the `github` key to our configuration file, like so:
 
 ```json
     {
