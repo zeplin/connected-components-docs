@@ -1,8 +1,8 @@
 # Zeplin Connected Components Documentation 🧩
 
-Connected Components in Zeplin enables developers to access components in their codebase right on the designs—with links to Storybook, GitHub and any other source of documentation based on your workflow.
+In Zeplin, Connected Components enables developers to access component code directly on the designs––in addition you can include a pathway to Storybook, GitHub, your design system or any other source of documentation.
 
-After connecting your components in Zeplin to your components in code, you'll be able to get a high level overview of the component right on the designs, like so:
+After connecting your components in Zeplin to your components in code, you'll get a high level overview of the component right on the designs, like so:
 
 <img src="img/zeplinConnectedComponent.png" alt="Connected component in Zeplin" width="600" />
 
@@ -16,12 +16,12 @@ For details on how to work with the `.zeplin/components.json` configuration file
 
 ## Plugins
 
-Connected Components is built with modularity and extensibility in mind. Plugins generate documentation, code snippets, links and so on to be displayed in Zeplin—**pick and choose the plugins you need based on the language, platform and tools you prefer**.
+Connected Components is built with modularity and extensibility in mind. Plugins generate documentation, code snippets and links to be displayed in Zeplin—**pick and choose the plugins you need based on the framework, platform and tools you prefer**.
 
 | Name                                                                       | Description                                                      | Created by                                                                         |
 |----------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [React Plugin](https://github.com/zeplin/cli-connect-react-plugin)         | Generates React documentation, snippets from components          | [zeplin](https://github.com/zeplin)                                                |
-| [Angular Plugin](https://github.com/zeplin/cli-connect-angular-plugin)     | Generates Angular documentation, snippets from components        | [zeplin](https://github.com/zeplin)                                                |
+| [Angular Plugin](https://github.com/zeplin/cli-connect-angular-plugin)         | Generates Angular documentation, snippets from components          | [zeplin](https://github.com/zeplin)                                                |
+| [React Plugin](https://github.com/zeplin/cli-connect-react-plugin)     | Generates React documentation, snippets from components        | [zeplin](https://github.com/zeplin)                                                |
 | [Swift Plugin](https://github.com/zeplin/cli-connect-swift-plugin)         | Generates documentation, snippets from iOS, macOS views in Swift | [zeplin](https://github.com/zeplin)                                                |
 | [Storybook Plugin](https://github.com/zeplin/cli-connect-storybook-plugin) | Generates Storybook links of components                          | [zeplin](https://github.com/zeplin), [storybookjs](https://github.com/storybookjs) |
 | [Vue Plugin](https://github.com/politico/zeplin-cli-connect-plugin-vue)    | Generates Vue snippets from components                           | [politico](https://github.com/politico)                                            |
