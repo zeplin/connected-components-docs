@@ -211,6 +211,14 @@ For further details on how to customize the configuration file, check out the [C
 
 If you run into any issues while running the `zeplin connect` command, make sure that you have the React plugin installed.
 
+```sh
+npm list -g --depth 0 @zeplin/cli-connect-react-plugin
+```
+
+### "I cannot see code snippets for my components on Zeplin"
+
+React plugin cannot generate snippets if no suitable React component are found in your component file. React plugin uses [react-docgen](https://github.com/reactjs/react-docgen) to analyze and collect information from React components. Check out `react-docgen` [guidelines](https://github.com/reactjs/react-docgen#guidelines-for-default-resolvers-and-handlers) for supported formats. You may also use [react-docgen playground](https://reactcommunity.org/react-docgen/) to find out if `react-docgen` can collect information about your React components.
+
 # Related resources
 
 - [Configuration file documentation](CONFIGURATION_FILE.md)
