@@ -97,7 +97,7 @@ Let's add this name to the `zeplinNames` list:
     ],
     "components": [
         {
-            "path": "src/components/Button/Button.js",
+            "path": "src/components/Button/Button.jsx",
             "zeplinNames": [
                 "Controls / Button / Primary"
             ]
@@ -163,7 +163,7 @@ Now, we'll update our configuration file to use the plugin. We can do that by ad
     ],
     "components": [
         {
-            "path": "src/components/Button/Button.js",
+            "path": "src/components/Button/Button.jsx",
             "zeplinNames": [
                 "Controls / Button / Primary"
             ]
