@@ -9,7 +9,9 @@
 | `components` | [`Component[]`](#Component) | Component files in codebase, with connections to Zeplin counterparts |
 | `plugins` | [`Plugin[]`](#Plugin) _(Optional)_ | Plugins to use with [Zeplin CLI](https://github.com/zeplin/cli) |
 | `links` | [`Link[]`](#Link) _(Optional)_ | Base URLs for custom component links, e.g. wiki |
-| `github` | [`GitHubConfig`](#GitHubConfig) _(Optional)_ | Configuration for GitHub component links |
+| `github` | [`RepositoryConfig`](#RepositoryConfig) _(Optional)_ | Configuration for GitHub component links |
+| `gitlab` | [`RepositoryConfig`](#RepositoryConfig) _(Optional)_ | Configuration for GitLab component links |
+| `bitbucket` | [`RepositoryConfig`](#RepositoryConfig) _(Optional)_ | Configuration for Bitbucket component links |
 
 ## Models
 
@@ -83,15 +85,15 @@ Once you define a link, you can set the URL paths for each component like so:
 }
 ```
 
-### `GitHubConfig`
+### `RepositoryConfig`
 
-Configuration for GitHub component links.
+Configuration for repository links, e.g. GitHub, GitLab, Bitbucket.
 
 | Property | Type | Description |
 | --- | --- | --- |
 | `repository` | `string` | Name of the repository to link to, e.g. `example/react-components` |
 | `branch` | `string` _(Optional)_ | Branch of the repository to link to—defaults to `master` |
-| `url` | `string` _(Optional)_ | Base URL, if using GitHub Enterprise |
+| `url` | `string` _(Optional)_ | Base URL, e.g. if using GitHub Enterprise |
 | `path` | `string` _(Optional)_ | Path of the project, if you're using a monorepo |
 
 ### `StorybookConfig`
