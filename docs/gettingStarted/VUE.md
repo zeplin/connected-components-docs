@@ -1,6 +1,6 @@
 # Getting started with Vue.js
 
-This guide covers how to get started with Connected Components for Vue components.
+This guide covers how to get started with Connected Components for Vue.js components.
 
 ## 1. Prepare configuration file
 
@@ -30,7 +30,7 @@ If you use the Visual Studio Code extension, it should prompt you to create the 
 In a bit, we'll start filling out the configuration file:
 
 - `projects` and `styleguides` keys are the identifiers of projects and styleguides we'll use components from.
-- `components` are the Vue component files in our codebase.
+- `components` are the Vue.js component files in our codebase.
 
 ### Add projects or styleguides
 
@@ -58,7 +58,7 @@ After adding projects or styleguides to our configuration file, it should look l
 
 Adding a component from your codebase to the configuration file is pretty straightforward—we'll add an object to the `components` list.
 
-In this example, we'll go with a `Button.vue` file under `src/components`. Pick a reusable Vue component file from your codebase and let's update our configuration file to look like so:
+In this example, we'll go with a `Button.vue` file under `src/components`. Pick a reusable Vue.js component file from your codebase and let's update our configuration file to look like so:
 
 ```json
 {
@@ -138,11 +138,11 @@ npm install -g @zeplin/cli
 
 Alternatively, if you're using npm in your project, you can add `@zeplin/cli` as a `devDependency`.
 
-## 3. Install CLI Vue plugin
+## 3. Install CLI Vue.js plugin
 
 Zeplin CLI uses plugins to generate documentation, snippets and links from components—check out our [list of plugins](README.md#Plugins).
 
-Since we're using Vue.js, we'll install the Vue plugin—developed by [politico](https://github.com/politico)— from npm, by running the following command:
+Since we're using Vue.js, we'll install the Vue.js plugin (developed by the fine folks at [politico](https://github.com/politico)) from npm, by running the following command:
 
 ```sh
 npm install -g zeplin-cli-connect-plugin-vue
@@ -190,6 +190,8 @@ Now head back to Zeplin and click on one of the components you connected. You sh
 
 <img src="../../img/zeplinConnectedComponent-vue.png" alt="Connected component in Zeplin" width="600" />
 
+For further information on how components are analyzed by the Vue.js plugin, check out the [repository](https://github.com/politico/zeplin-cli-connect-plugin-vue).
+
 ## 5. Add links _(Optional)_
 
 Connected Components also lets you add links to various sources like your Storybook, repository, wiki and so on. In the screenshot above, notice that we have links to GitHub and Storybook.
@@ -211,9 +213,9 @@ For further details on how to customize the configuration file, check out the [C
 
 # Troubleshooting
 
-If you run into any issues while running the `zeplin connect` command, make sure that you have the Vue plugin installed.
+If you run into any issues while running the `zeplin connect` command, make sure that you have the Vue.js plugin installed.
 
-Despite your components are convenient to create snippets and descriptions but the plugin couldn't generate them you can open an issue to the [repository](https://github.com/politico/zeplin-cli-connect-plugin-vue/issues).
+If you can't see documentation or code snippets in Zeplin after you successfully run the command, please create an issue under the [Vue.js plugin repository](https://github.com/politico/zeplin-cli-connect-plugin-vue/issues).
 
 # Related resources
 

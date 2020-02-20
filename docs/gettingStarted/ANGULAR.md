@@ -163,7 +163,7 @@ Now, we'll update our configuration file to use the plugin. We can do that by ad
     ],
     "components": [
         {
-            "path": "src/components/Button.ts",
+            "path": "src/components/Button.js",
             "zeplinNames": [
                 "Controls / Button / Primary",
                 "Controls / Button / Primary, Hover",
@@ -190,6 +190,27 @@ Now head back to Zeplin and click on one of the components you connected. You sh
 
 <img src="../../img/zeplinConnectedComponent-angular.png" alt="Connected component in Zeplin" width="600" />
 
+By default, Angular plugin only displays of the possible selectors of the component. In most cases this should be enough to get a glimpse of how the component can be used. If you want to see all the possible combinations, it's possible to configure the plugin like so:
+
+```json
+{
+    "plugins" : [
+        {
+            "name": "@zeplin/cli-connect-angular-plugin",
+            "config": {
+                "useFullSnippet": true,
+                "useFullDescription": true,
+            }
+    ],
+…
+```
+
+Once configured, you should see an output similar to this:
+
+<img src="../../img/zeplinConnectedComponent-angular-full.png" alt="Connected component in Zeplin" width="600" />
+
+For further information on how components are analyzed by the Angular plugin, check out the [repository](https://github.com/zeplin/cli-connect-angular-plugin).
+
 ## 5. Add links _(Optional)_
 
 Connected Components also lets you add links to various sources like your Storybook, repository, wiki and so on. In the screenshot above, notice that we have links to GitHub and Storybook.
@@ -201,26 +222,6 @@ To add links to your components, check out these guides:
 - [Adding repository links](../link/REPOSITORY.md), e.g. GitHub, GitLab, Bitbucket
 - [Adding custom links](../link/CUSTOM.md), e.g. internal Design System wiki
 
-## 6. More code snippets _(Optional)_
-
-By default, Angular plugin generates a code snippet using only one of the possible selectors of the Angular component. In most cases the generated code snippet will be enough to get a glimpse of how it can be use, but if you want to see all possible combinations, you can use following configuration to do so.
-
-```json
-…
-    "plugins" : [{
-        "name": "@zeplin/cli-connect-angular-plugin",
-        "config": {
-            "useFullSnippet": true,
-            "useFullDescription": true,
-        }
-    }],
-…
-```
-
-The output will be something like the below:
-
-<img src="../../img/zeplinConnectedComponent-angular-full.png" alt="Connected component in Zeplin" width="600" />
-
 ## 6. Connect more components
 
 Now that we connected our very first component, you can go ahead and connect more! Check out the section [Add component from codebase](#add-component-from-codebase) if you need any help.
@@ -231,7 +232,7 @@ For further details on how to customize the configuration file, check out the [C
 
 # Troubleshooting
 
-If you run into any issues while running the `zeplin connect` command, make sure that you have the Angular plugin installed by running the following command:
+If you run into any issues while running the `zeplin connect` command, make sure that you have the Angular plugin installed by running the following npm command:
 
 ```sh
 npm list -g --depth 0 @zeplin/cli-connect-angular-plugin

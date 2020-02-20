@@ -11,7 +11,7 @@ After connecting your components in Zeplin to your components in code, you'll be
 For details on how to use Connected Components in Zeplin, check out our getting started guides for various platforms/frameworks:
 
 - [React](docs/gettingStarted/REACT.md)
-- [Vue.js](docs/gettingStarted/VUE_JS.md)
+- [Vue.js](docs/gettingStarted/VUE.md)
 - [Angular](docs/gettingStarted/ANGULAR.md)
 - [iOS/macOS with Swift](docs/gettingStarted/SWIFT.md)
 
@@ -38,7 +38,7 @@ Connected Components is built with modularity and extensibility in mind. Plugins
 | [Angular Plugin](https://github.com/zeplin/cli-connect-angular-plugin)     | Generates Angular documentation, snippets from components        | [zeplin](https://github.com/zeplin)                                                |
 | [Swift Plugin](https://github.com/zeplin/cli-connect-swift-plugin)         | Generates documentation, snippets from iOS, macOS views in Swift | [zeplin](https://github.com/zeplin)                                                |
 | [Storybook Plugin](https://github.com/zeplin/cli-connect-storybook-plugin) | Generates Storybook links of components                          | [zeplin](https://github.com/zeplin), [storybookjs](https://github.com/storybookjs) |
-| [Vue Plugin](https://github.com/politico/zeplin-cli-connect-plugin-vue)    | Generates Vue snippets from components                           | [politico](https://github.com/politico)                                            |
+| [Vue Plugin](https://github.com/politico/zeplin-cli-connect-plugin-vue)    | Generates Vue documentation, snippets from components            | [politico](https://github.com/politico)                                            |
 
 **To build your own plugin** (either for internal use or sharing publicly), check out our [CLI plugins documentation](https://github.com/zeplin/cli/blob/master/PLUGIN.md).
 
