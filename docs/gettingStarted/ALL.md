@@ -97,7 +97,7 @@ Let's add this name to the `zeplinNames` list:
     ],
     "components": [
         {
-            "path": "src/components/Button/Button.js",
+            "path": "src/components/Button.js",
             "zeplinNames": [
                 "Controls / Button / Primary"
             ]
@@ -106,7 +106,7 @@ Let's add this name to the `zeplinNames` list:
 }
 ```
 
-Notice that in the screenshot above, we have two more states of the same button. It's possible connect a component in our codebase to multiple components in Zeplin. Here's how that would look like:
+Notice that in the screenshot above, we have two more states of the same button. It's possible connect a component in our codebase to multiple components in Zeplin—let's do that:
 
 ```json
 …
@@ -175,9 +175,11 @@ Now, we'll update our configuration file to use these plugins. We can do so by a
     ],
     "components": [
         {
-            "path": "src/components/Button/Button.js",
+            "path": "src/components/Button.js",
             "zeplinNames": [
-                "Controls / Button / Primary"
+                "Controls / Button / Primary",
+                "Controls / Button / Primary, Hover",
+                "Controls / Button / Primary, Pressed"
             ]
         }
     ]

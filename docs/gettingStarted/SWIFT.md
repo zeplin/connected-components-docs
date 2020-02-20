@@ -1,6 +1,6 @@
 # Getting started on iOS/macOS with Swift
 
-This guide covers how to get started with Connected Components for Swift components.
+This guide covers how to get started with Connected Components for Swift components, on iOS or macOS.
 
 ## 1. Prepare configuration file
 
@@ -97,7 +97,7 @@ Let's add this name to the `zeplinNames` list:
     ],
     "components": [
         {
-            "path": "Target/Views/Button.swift",
+            "path": "Example/Views/Button.swift",
             "zeplinNames": [
                 "Controls / Button / Primary"
             ]
@@ -106,7 +106,7 @@ Let's add this name to the `zeplinNames` list:
 }
 ```
 
-Notice that in the screenshot above, we have two more states of the same button. It's possible connect a component in our codebase to multiple components in Zeplin. Here's how that would look like:
+Notice that in the screenshot above, we have two more states of the same button. It's possible connect a component in our codebase to multiple components in Zeplin—let's do that:
 
 ```json
 …
