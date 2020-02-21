@@ -192,11 +192,11 @@ Now head back to Zeplin and click on one of the components you connected. You sh
 
 <img src="../../img/zeplinConnectedComponentSwift.png" alt="Connected component in Zeplin" width="297" />
 
-Our Swift plugin only supports initializer methods and class documentations at the moment. If this doesn't help you with your codebase, please feel free to reach out to us at [support@zeplin.io](mailto:support@zeplin.io).
+Our Swift plugin currently lists initializer methods and class documentations (with Markdown). If you have a different use case, please feel free to reach out to us at [support@zeplin.io](mailto:support@zeplin.io) or [contribute to the plugin](https://github.com/zeplin/cli-connect-swift-plugin).
 
 ## 5. Add links _(Optional)_
 
-Connected Components also lets you add links to various sources like your Storybook, repository, wiki and so on. In the screenshot above, notice that we have links to GitHub and Storybook.
+Connected Components also lets you add links to various sources like your repository, wiki and so on. In the screenshot above, notice that we have a link to GitHub.
 
 To add links to your components, check out these guides:
 
