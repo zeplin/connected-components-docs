@@ -207,7 +207,7 @@ By default, Angular plugin only displays of the possible selectors of the compon
 
 Once configured, you should see an output similar to this:
 
-<img src="../../img/zeplinConnectedComponent-angular-full.png" alt="Connected component in Zeplin" width="600" />
+<img src="../../img/zeplinConnectedComponent-angularDetailed.png" alt="Connected component in Zeplin" width="600" />
 
 For further information on how components are analyzed by the Angular plugin, check out the [repository](https://github.com/zeplin/cli-connect-angular-plugin).
 

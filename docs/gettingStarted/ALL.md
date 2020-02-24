@@ -202,7 +202,7 @@ zeplin connect
 
 Now head back to Zeplin and click on one of the components you connected. You should be able to see an output like so:
 
-<img src="../../img/zeplinConnectedComponent.png" alt="Connected component in Zeplin" width="600" />
+<img src="../../img/zeplinConnectedComponent-react.png" alt="Connected component in Zeplin" width="600" />
 
 ## 5. Add links _(Optional)_
 

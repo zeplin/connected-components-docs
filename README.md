@@ -4,7 +4,7 @@ Connected Components in Zeplin enables developers to access components in their 
 
 After connecting your components in Zeplin to your components in code, you'll be able to get a high level overview of the component right on the designs, like so:
 
-<img src="img/zeplinConnectedComponent.png" alt="Connected component in Zeplin" width="600" />
+<img src="img/zeplinConnectedComponent-react.png" alt="Connected component in Zeplin" width="600" />
 
 ## Getting started
 

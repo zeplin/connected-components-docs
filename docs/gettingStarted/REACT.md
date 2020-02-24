@@ -188,7 +188,7 @@ zeplin connect
 
 Now head back to Zeplin and click on one of the components you connected. You should see an output similar to this:
 
-<img src="../../img/zeplinConnectedComponent.png" alt="Connected component in Zeplin" width="600" />
+<img src="../../img/zeplinConnectedComponent-react.png" alt="Connected component in Zeplin" width="600" />
 
 For further information on how components are analyzed by the React plugin, check out the [repository](https://github.com/zeplin/cli-connect-react-plugin).
 

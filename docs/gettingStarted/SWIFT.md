@@ -190,7 +190,7 @@ zeplin connect
 
 Now head back to Zeplin and click on one of the components you connected. You should see an output similar to this:
 
-<img src="../../img/zeplinConnectedComponentSwift.png" alt="Connected component in Zeplin" width="297" />
+<img src="../../img/zeplinConnectedComponent-swift.png" alt="Connected component in Zeplin" width="600" />
 
 Our Swift plugin currently lists initializer methods and class documentations (with Markdown). If you have a different use case, please feel free to reach out to us at [support@zeplin.io](mailto:support@zeplin.io) or [contribute to the plugin](https://github.com/zeplin/cli-connect-swift-plugin).
 
