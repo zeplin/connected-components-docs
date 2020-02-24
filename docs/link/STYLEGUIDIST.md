@@ -2,7 +2,7 @@
 
 In this guide, we'll talk about how to add Styleguidist links to components. This lets you quickly access your Styleguidist documentation for your components within Zeplin, as you use them.
 
-☝️ _If you haven't created a Connected Components configuration file yet, check out our [getting started guides](../../README.md#getting-started)._
+☝️ _If you haven't created a Connected Components configuration file yet, check out our [getting started guides](/README.md#getting-started)._
 
 Here's our sample configuration file with two React components:
 

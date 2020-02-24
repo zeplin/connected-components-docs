@@ -142,7 +142,7 @@ Alternatively, if you're using npm in your project, you can add `@zeplin/cli` as
 
 ## 3. Choose which CLI plugins to use
 
-Zeplin CLI uses plugins to generate documentation, snippets and links from components. Check out our [list of plugins](README.md#Plugins) and pick the ones you want to use, based on your platform, framework or tools.
+Zeplin CLI uses plugins to generate documentation, snippets and links from components. Check out our [list of plugins](/README.md#Plugins) and pick the ones you want to use, based on your platform, framework or tools.
 
 In this example, we'll use two plugins:
 
@@ -222,14 +222,14 @@ Now that we connected our very first component, you can go ahead and connect mor
 
 Hope this getting started guide was helpful, reach out to us at [support@zeplin.io](mailto:support@zeplin.io) if you have any questions or feedback.
 
-For further details on how to customize the configuration file, check out the [Configuration file documentation](CONFIGURATION_FILE.md).
+For further details on how to customize the configuration file, check out the [Configuration file documentation](/CONFIGURATION_FILE.md).
 
 ## Troubleshooting
 
-If you run into any issues while running the `zeplin connect` command, make sure that you have all the plugins installed. All [plugins](README.md#Plugins) have installation instructions within their repositories.
+If you run into any issues while running the `zeplin connect` command, make sure that you have all the plugins installed. All [plugins](/README.md#Plugins) have installation instructions within their repositories.
 
 ## Related resources
 
-- [Configuration file documentation](CONFIGURATION_FILE.md)
-- [Plugins](README.md#Plugins)
+- [Configuration file documentation](/CONFIGURATION_FILE.md)
+- [Plugins](/README.md#Plugins)
 - [Build your own plugin](https://github.com/zeplin/cli/blob/master/PLUGIN.md)

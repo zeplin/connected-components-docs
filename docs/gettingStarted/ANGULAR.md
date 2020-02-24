@@ -142,7 +142,7 @@ Alternatively, if you're using npm in your project, you can add `@zeplin/cli` as
 
 ## 3. Install CLI Angular plugin
 
-Zeplin CLI uses plugins to generate documentation, snippets and links from components—check out our [list of plugins](README.md#Plugins).
+Zeplin CLI uses plugins to generate documentation, snippets and links from components—check out our [list of plugins](/README.md#Plugins).
 
 Since we're using Angular, we'll install the official Angular plugin from npm, by running the following command:
 
@@ -232,7 +232,7 @@ Now that we connected our very first component, you can go ahead and connect mor
 
 Hope this getting started guide was helpful, reach out to us at [support@zeplin.io](mailto:support@zeplin.io) if you have any questions or feedback.
 
-For further details on how to customize the configuration file, check out the [Configuration file documentation](CONFIGURATION_FILE.md).
+For further details on how to customize the configuration file, check out the [Configuration file documentation](/CONFIGURATION_FILE.md).
 
 # Troubleshooting
 
@@ -244,6 +244,6 @@ npm list -g --depth 0 @zeplin/cli-connect-angular-plugin
 
 # Related resources
 
-- [Configuration file documentation](CONFIGURATION_FILE.md)
-- [Plugins](README.md#Plugins)
+- [Configuration file documentation](/CONFIGURATION_FILE.md)
+- [Plugins](/README.md#Plugins)
 - [Build your own plugin](https://github.com/zeplin/cli/blob/master/PLUGIN.md)

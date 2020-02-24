@@ -26,7 +26,7 @@ Once you connect your components, check out these follow-up guides:
 
 ## Configuration file documentation
 
-For details on how to work with the `.zeplin/components.json` configuration file, check out the [Configuration file documentation](CONFIGURATION_FILE.md).
+For details on how to work with the `.zeplin/components.json` configuration file, check out the [Configuration file documentation](/CONFIGURATION_FILE.md).
 
 ## Plugins
 

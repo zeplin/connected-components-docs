@@ -4,7 +4,7 @@ In this guide, we'll talk about how to add repository links to components. This 
 
 Note that if you have the repository locally available, you can also use the “Open in” button in Zeplin to view the source code in your favorite IDE/text editor.
 
-☝️ _If you haven't created a Connected Components configuration file yet, check out our [getting started guides](../../README.md#getting-started)._
+☝️ _If you haven't created a Connected Components configuration file yet, check out our [getting started guides](/README.md#getting-started)._
 
 Currently it's possible to links to GitHub, GitLab and Bitbucket. In this example, we'll add GitHub links to all the components in our configuration file. Here's the sample configuration file we'll use, with two components:
 
@@ -76,6 +76,6 @@ This is it! Now when we run `zeplin connect`, we should start seeing the “Open
 <img src="../../img/zeplinCustomLink.png" alt="Connected component in Zeplin" width="314" /> _<TODO: Update screenshot.>_
 
 
-If you'd like to add links to GitLab or Bitbucket, simply change the property name from `github` to `gitlab` or `bitbucket`. For further details on how to customize your repository links, e.g. for GitHub Enterprise, path for monorepos, check out the [Configuration file documentation](CONFIGURATION_FILE.md#repositoryconfig).
+If you'd like to add links to GitLab or Bitbucket, simply change the property name from `github` to `gitlab` or `bitbucket`. For further details on how to customize your repository links, e.g. for GitHub Enterprise, path for monorepos, check out the [Configuration file documentation](/CONFIGURATION_FILE.md#repositoryconfig).
 
 Hope this quick guide on repository links was helpful, reach out to us at [support@zeplin.io](mailto:support@zeplin.io) if you have questions or feedback.
