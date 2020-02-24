@@ -109,6 +109,7 @@ Let's add this name to the `zeplinNames` list:
 Notice that in the screenshot above, we have two more states of the same button. It's possible connect a component in our codebase to multiple components in Zeplin—let's do that:
 
 ```json
+{
 …
             "zeplinNames": [
                 "Controls / Button / Primary",
@@ -116,6 +117,7 @@ Notice that in the screenshot above, we have two more states of the same button.
                 "Controls / Button / Primary, Pressed"
             ]
 …
+}
 ```
 
 If you're using the Visual Studio Code extension, you can simply click “Connect to Zeplin component” and search for a component in Zeplin, directly within Visual Studio Code.

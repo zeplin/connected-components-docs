@@ -30,7 +30,7 @@ If you use the Visual Studio Code extension, it should prompt you to create the 
 In a bit, we'll start filling out the configuration file:
 
 - `projects` and `styleguides` keys are the identifiers of projects and styleguides we'll use components from.
-- `components` are the React component files in our codebase.
+- `components` are the Swift component files in our codebase.
 
 ### Add projects or styleguides
 
@@ -58,7 +58,7 @@ After adding projects or styleguides to our configuration file, it should look l
 
 Adding a component from your codebase to the configuration file is pretty straightforward—we'll add an object to the `components` list.
 
-In this example, we'll go with a `Button.swift` file under `Example/Views`. Pick a reusable Swift component file from your codebase and let's update our configuration file to look like so:
+In this example, we'll go with a `Button.swift` file under `Components/Views`. Pick a reusable Swift component file from your codebase and let's update our configuration file to look like so:
 
 ```json
 {
@@ -68,7 +68,7 @@ In this example, we'll go with a `Button.swift` file under `Example/Views`. Pick
     ],
     "components": [
         {
-            "path": "Example/Views/Button.swift",
+            "path": "Components/Views/Button.swift",
             "zeplinNames": []
         }
     ]
@@ -97,7 +97,7 @@ Let's add this name to the `zeplinNames` list:
     ],
     "components": [
         {
-            "path": "Example/Views/Button.swift",
+            "path": "Components/Views/Button.swift",
             "zeplinNames": [
                 "Controls / Button / Primary"
             ]
@@ -109,6 +109,7 @@ Let's add this name to the `zeplinNames` list:
 Notice that in the screenshot above, we have two more states of the same button. It's possible connect a component in our codebase to multiple components in Zeplin—let's do that:
 
 ```json
+{
 …
             "zeplinNames": [
                 "Controls / Button / Primary",
@@ -116,6 +117,7 @@ Notice that in the screenshot above, we have two more states of the same button.
                 "Controls / Button / Primary, Pressed"
             ]
 …
+}
 ```
 
 **Congratulations, we just connected our first component!** 🎉
@@ -165,7 +167,7 @@ Now, we'll update our configuration file to use the plugin. We can do that by ad
     ],
     "components": [
         {
-            "path": "Example/Views/Button.swift",
+            "path": "Components/Views/Button.swift",
             "zeplinNames": [
                 "Controls / Button / Primary",
                 "Controls / Button / Primary, Hover",
