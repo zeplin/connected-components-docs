@@ -73,7 +73,7 @@ In addition, if you want your links to point to a specific branch of the reposit
 
 This is it! Now when we run `zeplin connect`, we should start seeing the “Open in GitHub” button in Zeplin:
 
-<img src="../../img/zeplinCustomLink.png" alt="Connected component in Zeplin" width="314" /> _<TODO: Update screenshot.>_
+<img src="../../img/zeplinGitHubLink.png" alt="Connected component in Zeplin" width="314" />
 
 
 If you'd like to add links to GitLab or Bitbucket, simply change the property name from `github` to `gitlab` or `bitbucket`. For further details on how to customize your repository links, e.g. for GitHub Enterprise, path for monorepos, check out the [Configuration file documentation](/CONFIGURATION_FILE.md#repositoryconfig).
