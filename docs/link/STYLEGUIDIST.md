@@ -2,7 +2,7 @@
 
 In this guide, we'll talk about how to add Styleguidist links to components. This lets you quickly access your Styleguidist documentation for your components within Zeplin, as you use them.
 
-☝️ _If you haven't created a Connected Components configuration file yet, check out our [getting started guides](../../README.md#getting-started)._
+☝️ _If you haven't created a Connected Components configuration file yet, check out our [getting started guides](/README.md#getting-started)._
 
 Here's our sample configuration file with two React components:
 
@@ -97,6 +97,6 @@ This lets Zeplin concatenate the name to the URL. So for the button component, t
 
 This is it! Now when we run `zeplin connect`, we should start seeing the “Open in Styleguidist” button in Zeplin:
 
-<img src="../../img/zeplinCustomLink.png" alt="Connected component in Zeplin" width="314" /> _<TODO: Update screenshot.>_
+<img src="../../img/zeplinStyleguidistLink.png" alt="Connected component in Zeplin" width="314" />
 
 Hope this quick guide on Styleguidist links was helpful, reach out to us at [support@zeplin.io](mailto:support@zeplin.io) if you have questions or feedback.

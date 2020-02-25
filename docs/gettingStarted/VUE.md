@@ -9,7 +9,7 @@ The first thing we'll do is to create a JSON configuration file in our repositor
 You can either prepare the configuration file:
 
 - Manually
-- Use [Zeplin Visual Studio Code extension]() _(Recommended)_
+- Use [Zeplin Visual Studio Code extension](https://zpl.io/vscode-extension) _(Recommended)_
 
 In this guide, we'll prepare the file manually, while also mentioning how you can use the extension to simplify all of the steps.
 
@@ -109,6 +109,7 @@ Let's add this name to the `zeplinNames` list:
 Notice that in the screenshot above, we have two more states of the same button. It's possible connect a component in our codebase to multiple components in Zeplin—let's do that:
 
 ```json
+{
 …
             "zeplinNames": [
                 "Controls / Button / Primary",
@@ -116,6 +117,7 @@ Notice that in the screenshot above, we have two more states of the same button.
                 "Controls / Button / Primary, Pressed"
             ]
 …
+}
 ```
 
 If you're using the Visual Studio Code extension, you can simply click “Connect to Zeplin component” and search for a component in Zeplin, directly within Visual Studio Code.
@@ -140,7 +142,7 @@ Alternatively, if you're using npm in your project, you can add `@zeplin/cli` as
 
 ## 3. Install CLI Vue.js plugin
 
-Zeplin CLI uses plugins to generate documentation, snippets and links from components—check out our [list of plugins](README.md#Plugins).
+Zeplin CLI uses plugins to generate documentation, snippets and links from components—check out our [list of plugins](/README.md#Plugins).
 
 Since we're using Vue.js, we'll install the Vue.js plugin (developed by the fine folks at [politico](https://github.com/politico)) from npm, by running the following command:
 
@@ -209,7 +211,7 @@ Now that we connected our very first component, you can go ahead and connect mor
 
 Hope this getting started guide was helpful, reach out to us at [support@zeplin.io](mailto:support@zeplin.io) if you have any questions or feedback.
 
-For further details on how to customize the configuration file, check out the [Configuration file documentation](CONFIGURATION_FILE.md).
+For further details on how to customize the configuration file, check out the [Configuration file documentation](/CONFIGURATION_FILE.md).
 
 # Troubleshooting
 
@@ -219,6 +221,6 @@ If you can't see documentation or code snippets in Zeplin after you successfully
 
 # Related resources
 
-- [Configuration file documentation](CONFIGURATION_FILE.md)
-- [Plugins](README.md#Plugins)
+- [Configuration file documentation](/CONFIGURATION_FILE.md)
+- [Plugins](/README.md#Plugins)
 - [Build your own plugin](https://github.com/zeplin/cli/blob/master/PLUGIN.md)

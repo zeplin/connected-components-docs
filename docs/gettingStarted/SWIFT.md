@@ -9,7 +9,7 @@ The first thing we'll do is to create a JSON configuration file in our repositor
 You can either prepare the configuration file:
 
 - Manually
-- Use [Zeplin Visual Studio Code extension]() _(Recommended)_
+- Use [Zeplin Visual Studio Code extension](https://zpl.io/vscode-extension) _(Recommended)_
 
 In this guide, we'll prepare the file manually, while also mentioning how you can use the extension to simplify all of the steps.
 
@@ -30,7 +30,7 @@ If you use the Visual Studio Code extension, it should prompt you to create the 
 In a bit, we'll start filling out the configuration file:
 
 - `projects` and `styleguides` keys are the identifiers of projects and styleguides we'll use components from.
-- `components` are the React component files in our codebase.
+- `components` are the Swift component files in our codebase.
 
 ### Add projects or styleguides
 
@@ -109,6 +109,7 @@ Let's add this name to the `zeplinNames` list:
 Notice that in the screenshot above, we have two more states of the same button. It's possible connect a component in our codebase to multiple components in Zeplin—let's do that:
 
 ```json
+{
 …
             "zeplinNames": [
                 "Controls / Button / Primary",
@@ -116,6 +117,7 @@ Notice that in the screenshot above, we have two more states of the same button.
                 "Controls / Button / Primary, Pressed"
             ]
 …
+}
 ```
 
 **Congratulations, we just connected our first component!** 🎉
@@ -136,7 +138,7 @@ npm install -g @zeplin/cli
 
 ## 3. Install CLI Swift plugin
 
-Zeplin CLI uses plugins to generate documentation, snippets and links from components—check out our [list of plugins](README.md#Plugins).
+Zeplin CLI uses plugins to generate documentation, snippets and links from components—check out our [list of plugins](/README.md#Plugins).
 
 Since we're using Swift, we'll install the official Swift plugin from npm, by running the following command:
 
@@ -190,7 +192,7 @@ zeplin connect
 
 Now head back to Zeplin and click on one of the components you connected. You should see an output similar to this:
 
-<img src="../../img/zeplinConnectedComponentSwift.png" alt="Connected component in Zeplin" width="297" />
+<img src="../../img/zeplinConnectedComponent-swift.png" alt="Connected component in Zeplin" width="600" />
 
 Our Swift plugin currently lists initializer methods and class documentations (with Markdown). If you have a different use case, please feel free to reach out to us at [support@zeplin.io](mailto:support@zeplin.io) or [contribute to the plugin](https://github.com/zeplin/cli-connect-swift-plugin).
 
@@ -209,7 +211,7 @@ Now that we connected our very first component, you can go ahead and connect mor
 
 Hope this getting started guide was helpful, reach out to us at [support@zeplin.io](mailto:support@zeplin.io) if you have any questions or feedback.
 
-For further details on how to customize the configuration file, check out the [Configuration file documentation](CONFIGURATION_FILE.md).
+For further details on how to customize the configuration file, check out the [Configuration file documentation](/CONFIGURATION_FILE.md).
 
 # Troubleshooting
 
@@ -217,6 +219,6 @@ If you run into any issues while running the `zeplin connect` command, make sure
 
 # Related resources
 
-- [Configuration file documentation](CONFIGURATION_FILE.md)
-- [Plugins](README.md#Plugins)
+- [Configuration file documentation](/CONFIGURATION_FILE.md)
+- [Plugins](/README.md#Plugins)
 - [Build your own plugin](https://github.com/zeplin/cli/blob/master/PLUGIN.md)

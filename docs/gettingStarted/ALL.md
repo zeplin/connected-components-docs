@@ -9,7 +9,7 @@ The first thing we'll do is to create a JSON configuration file in our repositor
 You can either prepare the configuration file:
 
 - Manually
-- Use [Zeplin Visual Studio Code extension]() _(Recommended)_
+- Use [Zeplin Visual Studio Code extension](https://zpl.io/vscode-extension) _(Recommended)_
 
 In this guide, we'll prepare the file manually, while also mentioning how you can use the extension to simplify all of the steps.
 
@@ -97,7 +97,7 @@ Let's add this name to the `zeplinNames` list:
     ],
     "components": [
         {
-            "path": "src/components/Button.js",
+            "path": "src/components/Button.jsx",
             "zeplinNames": [
                 "Controls / Button / Primary"
             ]
@@ -109,6 +109,7 @@ Let's add this name to the `zeplinNames` list:
 Notice that in the screenshot above, we have two more states of the same button. It's possible connect a component in our codebase to multiple components in Zeplin—let's do that:
 
 ```json
+{
 …
             "zeplinNames": [
                 "Controls / Button / Primary",
@@ -116,6 +117,7 @@ Notice that in the screenshot above, we have two more states of the same button.
                 "Controls / Button / Primary, Pressed"
             ]
 …
+}
 ```
 
 If you're using the Visual Studio Code extension, you can simply click “Connect to Zeplin component” and search for a component in Zeplin, directly within Visual Studio Code.
@@ -140,7 +142,7 @@ Alternatively, if you're using npm in your project, you can add `@zeplin/cli` as
 
 ## 3. Choose which CLI plugins to use
 
-Zeplin CLI uses plugins to generate documentation, snippets and links from components. Check out our [list of plugins](README.md#Plugins) and pick the ones you want to use, based on your platform, framework or tools.
+Zeplin CLI uses plugins to generate documentation, snippets and links from components. Check out our [list of plugins](/README.md#Plugins) and pick the ones you want to use, based on your platform, framework or tools.
 
 In this example, we'll use two plugins:
 
@@ -175,7 +177,7 @@ Now, we'll update our configuration file to use these plugins. We can do so by a
     ],
     "components": [
         {
-            "path": "src/components/Button.js",
+            "path": "src/components/Button.jsx",
             "zeplinNames": [
                 "Controls / Button / Primary",
                 "Controls / Button / Primary, Hover",
@@ -202,7 +204,7 @@ zeplin connect
 
 Now head back to Zeplin and click on one of the components you connected. You should be able to see an output like so:
 
-<img src="../../img/zeplinConnectedComponent.png" alt="Connected component in Zeplin" width="600" />
+<img src="../../img/zeplinConnectedComponent-react.png" alt="Connected component in Zeplin" width="600" />
 
 ## 5. Add links _(Optional)_
 
@@ -220,14 +222,14 @@ Now that we connected our very first component, you can go ahead and connect mor
 
 Hope this getting started guide was helpful, reach out to us at [support@zeplin.io](mailto:support@zeplin.io) if you have any questions or feedback.
 
-For further details on how to customize the configuration file, check out the [Configuration file documentation](CONFIGURATION_FILE.md).
+For further details on how to customize the configuration file, check out the [Configuration file documentation](/CONFIGURATION_FILE.md).
 
 ## Troubleshooting
 
-If you run into any issues while running the `zeplin connect` command, make sure that you have all the plugins installed. All [plugins](README.md#Plugins) have installation instructions within their repositories.
+If you run into any issues while running the `zeplin connect` command, make sure that you have all the plugins installed. All [plugins](/README.md#Plugins) have installation instructions within their repositories.
 
 ## Related resources
 
-- [Configuration file documentation](CONFIGURATION_FILE.md)
-- [Plugins](README.md#Plugins)
+- [Configuration file documentation](/CONFIGURATION_FILE.md)
+- [Plugins](/README.md#Plugins)
 - [Build your own plugin](https://github.com/zeplin/cli/blob/master/PLUGIN.md)

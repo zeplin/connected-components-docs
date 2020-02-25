@@ -4,7 +4,7 @@ In this guide, we'll talk about how to add custom links to components. This lets
 
 It doesn't matter whether these links are internal to your company or accessible to public, since Zeplin will simply displaying a button that opens the link in your browser.
 
-☝️ _If you haven't created a Connected Components configuration file yet, check out our [getting started guides](../../README.md#getting-started)._
+☝️ _If you haven't created a Connected Components configuration file yet, check out our [getting started guides](/README.md#getting-started)._
 
 In this example, we'll add links to our design system documentation on (1) Confluence and (2) Notion. Here's our sample configuration file with two components and no links at all:
 

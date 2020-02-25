@@ -9,7 +9,7 @@ The first thing we'll do is to create a JSON configuration file in our repositor
 You can either prepare the configuration file:
 
 - Manually
-- Use [Zeplin Visual Studio Code extension]() _(Recommended)_
+- Use [Zeplin Visual Studio Code extension](https://zpl.io/vscode-extension) _(Recommended)_
 
 In this guide, we'll prepare the file manually, while also mentioning how you can use the extension to simplify all of the steps.
 
@@ -58,7 +58,7 @@ After adding projects or styleguides to our configuration file, it should look l
 
 Adding a component from your codebase to the configuration file is pretty straightforward—we'll add an object to the `components` list.
 
-In this example, we'll go with a `Button.ts` file under `src/components`. Pick a reusable Angular component file from your codebase and let's update our configuration file to look like so:
+In this example, we'll go with a `button.ts` file under `src/material/button`. Pick a reusable Angular component file from your codebase and let's update our configuration file to look like so:
 
 ```json
 {
@@ -68,7 +68,7 @@ In this example, we'll go with a `Button.ts` file under `src/components`. Pick a
     ],
     "components": [
         {
-            "path": "src/components/Button.ts",
+            "path": "src/material/button/button.ts",
             "zeplinNames": []
         }
     ]
@@ -97,7 +97,7 @@ Let's add this name to the `zeplinNames` list:
     ],
     "components": [
         {
-            "path": "src/components/Button.js",
+            "path": "src/material/button/button.ts",
             "zeplinNames": [
                 "Controls / Button / Primary"
             ]
@@ -109,6 +109,7 @@ Let's add this name to the `zeplinNames` list:
 Notice that in the screenshot above, we have two more states of the same button. It's possible connect a component in our codebase to multiple components in Zeplin—let's do that:
 
 ```json
+{
 …
             "zeplinNames": [
                 "Controls / Button / Primary",
@@ -116,6 +117,7 @@ Notice that in the screenshot above, we have two more states of the same button.
                 "Controls / Button / Primary, Pressed"
             ]
 …
+}
 ```
 
 If you're using the Visual Studio Code extension, you can simply click “Connect to Zeplin component” and search for a component in Zeplin, directly within Visual Studio Code.
@@ -140,7 +142,7 @@ Alternatively, if you're using npm in your project, you can add `@zeplin/cli` as
 
 ## 3. Install CLI Angular plugin
 
-Zeplin CLI uses plugins to generate documentation, snippets and links from components—check out our [list of plugins](README.md#Plugins).
+Zeplin CLI uses plugins to generate documentation, snippets and links from components—check out our [list of plugins](/README.md#Plugins).
 
 Since we're using Angular, we'll install the official Angular plugin from npm, by running the following command:
 
@@ -163,7 +165,7 @@ Now, we'll update our configuration file to use the plugin. We can do that by ad
     ],
     "components": [
         {
-            "path": "src/components/Button.js",
+            "path": "src/material/button/button.ts",
             "zeplinNames": [
                 "Controls / Button / Primary",
                 "Controls / Button / Primary, Hover",
@@ -199,15 +201,17 @@ By default, Angular plugin only displays of the possible selectors of the compon
             "name": "@zeplin/cli-connect-angular-plugin",
             "config": {
                 "useFullSnippet": true,
-                "useFullDescription": true,
+                "useFullDescription": true
             }
+        }
     ],
 …
+}
 ```
 
 Once configured, you should see an output similar to this:
 
-<img src="../../img/zeplinConnectedComponent-angular-full.png" alt="Connected component in Zeplin" width="600" />
+<img src="../../img/zeplinConnectedComponent-angularDetailed.png" alt="Connected component in Zeplin" width="600" />
 
 For further information on how components are analyzed by the Angular plugin, check out the [repository](https://github.com/zeplin/cli-connect-angular-plugin).
 
@@ -228,7 +232,7 @@ Now that we connected our very first component, you can go ahead and connect mor
 
 Hope this getting started guide was helpful, reach out to us at [support@zeplin.io](mailto:support@zeplin.io) if you have any questions or feedback.
 
-For further details on how to customize the configuration file, check out the [Configuration file documentation](CONFIGURATION_FILE.md).
+For further details on how to customize the configuration file, check out the [Configuration file documentation](/CONFIGURATION_FILE.md).
 
 # Troubleshooting
 
@@ -240,6 +244,6 @@ npm list -g --depth 0 @zeplin/cli-connect-angular-plugin
 
 # Related resources
 
-- [Configuration file documentation](CONFIGURATION_FILE.md)
-- [Plugins](README.md#Plugins)
+- [Configuration file documentation](/CONFIGURATION_FILE.md)
+- [Plugins](/README.md#Plugins)
 - [Build your own plugin](https://github.com/zeplin/cli/blob/master/PLUGIN.md)
