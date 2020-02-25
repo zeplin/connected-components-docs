@@ -194,6 +194,8 @@ Now head back to Zeplin and click on one of the components you connected. You sh
 
 For further information on how components are analyzed by the Vue.js plugin, check out the [repository](https://github.com/politico/zeplin-cli-connect-plugin-vue).
 
+☝️ _If you want to see the result of your configuration file before you publish it in Zeplin check out the documentation about [testing your changes locally](TEST_LOCALLY.md)._
+
 ## 5. Add links _(Optional)_
 
 Connected Components also lets you add links to various sources like your Storybook, repository, wiki and so on. In the screenshot above, notice that we have links to GitHub and Storybook.
