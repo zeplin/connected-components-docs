@@ -9,7 +9,7 @@ The first thing we'll do is to create a JSON configuration file in our repositor
 You can either prepare the configuration file:
 
 - Manually
-- Use [Zeplin Visual Studio Code extension]() _(Recommended)_
+- Use [Zeplin Visual Studio Code extension](https://zpl.io/vscode-extension) _(Recommended)_
 
 In this guide, we'll prepare the file manually, while also mentioning how you can use the extension to simplify all of the steps.
 
