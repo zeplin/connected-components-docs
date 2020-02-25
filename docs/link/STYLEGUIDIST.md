@@ -58,7 +58,7 @@ While defining the link, we need to provide 3 properties:
 2. `type` property is the identifier, which we'll set to `styleguidist`.
 3. `url` property is where we specify the URL for our Styleguidist instance. Note that this can either be a localhost URL or a remote URL.
 
-Let's now define the Styleguidist names for the two components in our configuration file. To do that, under each component, we'll add a property called `styleguidist`. Finally, within this property, we'll define the the name under the `kind` property, like so:
+Let's now define the Styleguidist names for the two components in our configuration file. To do that, under each component, we'll add a property called `styleguidist`. Finally, within this property, we'll define the the name under the `name` property, like so:
 
 ```json
 {
@@ -70,7 +70,7 @@ Let's now define the Styleguidist names for the two components in our configurat
                 "Controls / Button / Primary"
             ],
             "styleguidist": {
-                "kind": "button"
+                "name": "button"
             }
         },
         {
@@ -79,7 +79,7 @@ Let's now define the Styleguidist names for the two components in our configurat
                 "Controls / Text field / Primary"
             ],
             "styleguidist": {
-                "kind": "textfield"
+                "name": "textfield"
             }
         }
     ],

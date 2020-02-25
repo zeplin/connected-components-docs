@@ -111,4 +111,4 @@ Configuration for Styleguidist component links.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `kind` | `string` | Name of the component used in the Styleguidist URL, after `#` |
+| `name` | `string` | Name of the component used in the Styleguidist URL, after `#` |
