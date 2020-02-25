@@ -58,7 +58,7 @@ After adding projects or styleguides to our configuration file, it should look l
 
 Adding a component from your codebase to the configuration file is pretty straightforward—we'll add an object to the `components` list.
 
-In this example, we'll go with a `Button.swift` file under `Components/Views`. Pick a reusable Swift component file from your codebase and let's update our configuration file to look like so:
+In this example, we'll go with a `Button.swift` file under `Example/Views`. Pick a reusable Swift component file from your codebase and let's update our configuration file to look like so:
 
 ```json
 {
@@ -68,7 +68,7 @@ In this example, we'll go with a `Button.swift` file under `Components/Views`. P
     ],
     "components": [
         {
-            "path": "Components/Views/Button.swift",
+            "path": "Example/Views/Button.swift",
             "zeplinNames": []
         }
     ]
@@ -97,7 +97,7 @@ Let's add this name to the `zeplinNames` list:
     ],
     "components": [
         {
-            "path": "Components/Views/Button.swift",
+            "path": "Example/Views/Button.swift",
             "zeplinNames": [
                 "Controls / Button / Primary"
             ]
@@ -167,7 +167,7 @@ Now, we'll update our configuration file to use the plugin. We can do that by ad
     ],
     "components": [
         {
-            "path": "Components/Views/Button.swift",
+            "path": "Example/Views/Button.swift",
             "zeplinNames": [
                 "Controls / Button / Primary",
                 "Controls / Button / Primary, Hover",
