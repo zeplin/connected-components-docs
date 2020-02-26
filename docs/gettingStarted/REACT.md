@@ -1,6 +1,6 @@
 # Getting started with React
 
-This guide covers how to get started with Connected Components for React components.
+This guide covers how to get started with Connected Components for React and React Native components.
 
 ## 1. Prepare configuration file
 
