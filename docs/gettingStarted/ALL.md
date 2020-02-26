@@ -206,7 +206,7 @@ Now head back to Zeplin and click on one of the components you connected. You sh
 
 <img src="../../img/zeplinConnectedComponent-react.png" alt="Connected component in Zeplin" width="600" />
 
-☝️ _If you want to see the result of your configuration file before you publish it in Zeplin check out the documentation about [testing your changes locally](TEST_LOCALLY.md)._
+☝️ _If you want to see the output locally in Zeplin before you publish it to your team, check out our guide on [testing your changes locally](TEST_LOCALLY.md)._
 
 ## 5. Add links _(Optional)_
 
