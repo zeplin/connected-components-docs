@@ -23,6 +23,7 @@ Once you connect your components, check out these follow-up guides:
 - [Adding custom links](docs/link/CUSTOM.md), e.g. internal Design System wiki
 - [Adding Storybook links](docs/link/STORYBOOK.md)
 - [Adding Styleguidist links](docs/link/STYLEGUIDIST.md)
+- [Test your changes locally](docs/gettingStarted/TEST_LOCALLY.md)
 
 ## Configuration file documentation
 

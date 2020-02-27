@@ -206,6 +206,8 @@ Now head back to Zeplin and click on one of the components you connected. You sh
 
 <img src="../../img/zeplinConnectedComponent-react.png" alt="Connected component in Zeplin" width="600" />
 
+☝️ _If you want to see the output locally in Zeplin before you publish it to your team, check out our guide on [testing your changes locally](TEST_LOCALLY.md)._
+
 ## 5. Add links _(Optional)_
 
 Connected Components also lets you add links to various sources like your repository, wiki and so on. In the screenshot above, notice that we have links to GitHub and Storybook.
