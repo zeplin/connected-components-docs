@@ -44,11 +44,9 @@ Firstly, in our configuration file, we'll add a property called `github`. Within
     "components": [
         …
     ],
-    "github": [
-        {
-            "repository": "example/react-components"
-        }
-    ]
+    "github": {
+        "repository": "example/react-components"
+    }
 }
 ```
 
@@ -63,8 +61,8 @@ In addition, if you want your links to point to a specific branch of the reposit
         …
     ],
     "github": {
-            "repository": "example/react-components",
-            "branch": "develop"
+        "repository": "example/react-components",
+        "branch": "develop"
     }
 }
 ```
