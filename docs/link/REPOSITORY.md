@@ -62,12 +62,10 @@ In addition, if you want your links to point to a specific branch of the reposit
     "components": [
         …
     ],
-    "github": [
-        {
+    "github": {
             "repository": "example/react-components",
             "branch": "develop"
-        }
-    ]
+     }
 }
 ```
 
