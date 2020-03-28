@@ -42,7 +42,7 @@ If you use Storybook locally, we'll provide Zeplin the npm script (or the comman
 
 If you run Storybook using a command instead, you can use the `command` property instead of the `startScript` property.
 
-### Remote Storybook insteance
+### Remote Storybook instance
 
 If you have a Storybook instance that's running remotely, let's add the plugin to our configuration file under the `plugins` list, providing the URL like so:
 
