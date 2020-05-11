@@ -120,6 +120,18 @@ Notice that in the screenshot above, we have two more states of the same button.
 }
 ```
 
+Also, you can define similarly named components in a more easy way by using a wildcard in `zeplinNames` array:
+
+```json
+{
+…
+            "zeplinNames": [
+                "Controls / Button / Primary*",
+            ]
+…
+}
+```
+
 **Congratulations, we just connected our first component!** 🎉
 
 Next up, we'll install and use Zeplin's CLI tool so that these connected components are visible in Zeplin to our team.
@@ -169,9 +181,7 @@ Now, we'll update our configuration file to use the plugin. We can do that by ad
         {
             "path": "Example/Views/Button.swift",
             "zeplinNames": [
-                "Controls / Button / Primary",
-                "Controls / Button / Primary, Hover",
-                "Controls / Button / Primary, Pressed"
+                "Controls / Button / Primary*"
             ]
         }
     ]

@@ -120,6 +120,18 @@ Notice that in the screenshot above, we have two more states of the same button.
 }
 ```
 
+Also, you can define similarly named components in a more easy way by using a wildcard in `zeplinNames` array:
+
+```json
+{
+…
+            "zeplinNames": [
+                "Controls / Button / Primary*",
+            ]
+…
+}
+```
+
 If you're using the Visual Studio Code extension, you can simply click “Connect to Zeplin component” and search for a component in Zeplin, directly within Visual Studio Code.
 
 **Congratulations, we just connected our first component!** 🎉
@@ -179,9 +191,7 @@ Now, we'll update our configuration file to use these plugins. We can do so by a
         {
             "path": "src/components/Button.jsx",
             "zeplinNames": [
-                "Controls / Button / Primary",
-                "Controls / Button / Primary, Hover",
-                "Controls / Button / Primary, Pressed"
+                "Controls / Button / Primary*"
             ]
         }
     ]
