@@ -11,7 +11,7 @@
 | `links` | [`Link[]`](#Link) _(Optional)_ | Base URLs for custom component links, e.g. wiki |
 | `github` | [`RepositoryConfig`](#RepositoryConfig) _(Optional)_ | Configuration for GitHub component links |
 | `gitlab` | [`RepositoryConfig`](#RepositoryConfig) _(Optional)_ | Configuration for GitLab component links |
-| `bitbucket` | [`RepositoryConfig`](#RepositoryConfig) _(Optional)_ | Configuration for Bitbucket component links |
+| `bitbucket` | [`BitbucketConfig`](#BitbucketConfig) _(Optional)_ | Configuration for Bitbucket component links |
 
 ## Models
 
@@ -87,7 +87,7 @@ Once you define a link, you can set the URL paths for each component like so:
 
 ### `RepositoryConfig`
 
-Configuration for repository links, e.g. GitHub, GitLab, Bitbucket.
+Configuration for repository links, e.g. GitHub, GitLab.
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -95,6 +95,18 @@ Configuration for repository links, e.g. GitHub, GitLab, Bitbucket.
 | `branch` | `string` _(Optional)_ | Branch of the repository to link to—defaults to `master` |
 | `url` | `string` _(Optional)_ | Base URL, e.g. if using GitHub Enterprise |
 | `path` | `string` _(Optional)_ | Path of the project, if you're using a monorepo |
+
+### `BitbucketConfig`
+
+Configuration for repository links Bitbucket.
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `repository` | `string` | Name of the repository to link to, e.g. `react-components` |
+| `branch` | `string` _(Optional)_ | Branch of the repository to link to—defaults to `master` (or to repository default branch on Bitbucket Server) |
+| `url` | `string` _(Optional)_ | (Bitbucket Server) Base URL, e.g. https://bitbucket.company.com if you are using Bitbucket Server |
+| `project` | `string` _(Optional)_ | (Bitbucket Server) Project name if the repository is part of a project |
+| `user` | `string` _(Optional)_ | (Bitbucket Server) User name if the repository is under a user |
 
 ### `StorybookConfig`
 
