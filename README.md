@@ -41,6 +41,7 @@ Connected Components is built with modularity and extensibility in mind. Plugins
 | [Swift Plugin](https://github.com/zeplin/cli-connect-swift-plugin) | Generates documentation, snippets for iOS, macOS views in Swift | [zeplin](https://github.com/zeplin) |
 | [Storybook Plugin](https://github.com/zeplin/cli-connect-storybook-plugin) | Generates Storybook links for components | [zeplin](https://github.com/zeplin), [storybookjs](https://github.com/storybookjs) |
 | [Vue Plugin](https://github.com/politico/zeplin-cli-connect-plugin-vue) | Generates documentation, snippets for Vue components | [politico](https://github.com/politico) |
+| [StencilJS Plugin](https://github.com/fmontes/zeplin-cli-connect-plugin-stenciljs) | Generates documentation, snippets for StencilJS Web Components | [fmontes](https://github.com/fmontes) |
 
 **To build your own plugin** (either for internal use or sharing publicly), check out our [CLI plugins documentation](https://github.com/zeplin/cli/blob/master/PLUGIN.md).
 
