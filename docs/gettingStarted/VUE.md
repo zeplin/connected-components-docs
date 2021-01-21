@@ -106,7 +106,7 @@ Let's add this name to the `zeplinNames` list:
 }
 ```
 
-Notice that in the screenshot above, we have two more states of the same button. It's possible connect a component in our codebase to multiple components in Zeplin—let's do that:
+Notice that in the screenshot above, we have two more states of the same button. It's possible to connect a component in our codebase to multiple components in Zeplin—let's do that:
 
 ```json
 {
