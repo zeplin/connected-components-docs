@@ -125,3 +125,7 @@ Now when we run `zeplin connect`, we should start seeing the “Open in Storyboo
 <img src="../../img/zeplinStorybookLink.png" alt="Connected component in Zeplin" width="334" />
 
 Hope this quick guide on Storybook links was helpful, reach out to us at [support@zeplin.io](mailto:support@zeplin.io) if you have questions or feedback.
+
+# Related resources
+
+- [Zeplin CLI Storybook Plugin](https://github.com/zeplin/cli-connect-storybook-plugin/blob/master/README.md)

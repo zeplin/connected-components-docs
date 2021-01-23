@@ -71,6 +71,6 @@ This is it! Now when we run `zeplin connect`, we should start seeing the “Open
 
 <img src="../../img/zeplinGitHubLink.png" alt="Connected component in Zeplin" width="314" />
 
-For further details on how to customize your repository links, e.g. for GitHub Enterprise, Gitlab, Bitbucket, path for monorepos, check out the [Configuration file documentation](/CONFIGURATION_FILE.md#repositoryconfig).
+For further details on how to customize your repository links, e.g. for GitHub Enterprise, Gitlab, Bitbucket, path for monorepos, check out the [Configuration file documentation](../CONFIGURATION_FILE.md#repositoryconfig).
 
 Hope this quick guide on repository links was helpful, reach out to us at [support@zeplin.io](mailto:support@zeplin.io) if you have questions or feedback.
