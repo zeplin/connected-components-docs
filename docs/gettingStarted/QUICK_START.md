@@ -10,6 +10,7 @@
     + [Using CLI command](#using-cli-command)
     + [Using VS Code Extension](#using-vs-code-extension)
   * [Add links (Optional)](#add-links-optional)
+- [Troubleshooting](#troubleshooting)
 
 # Quick Start with Connected Components
 
@@ -145,3 +146,7 @@ Zeplin CLI will try to configure Storybook and git repository automatically, if 
 - [Adding Styleguidist links](../link/STYLEGUIDIST.md)
 - [Adding repository links](../link/REPOSITORY.md), e.g. GitHub, GitLab, Bitbucket
 - [Adding custom links](../link/CUSTOM.md), e.g. internal Design System wiki
+
+# Troubleshooting
+
+Check [Troubleshooting](../TROUBLESHOOTING.md) document for common issues.
