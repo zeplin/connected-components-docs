@@ -31,7 +31,7 @@ Zeplin CLI can authenticate using an access token instead of your Zeplin credent
 1. Get a CLI access token from your [Profile](https://app.zeplin.io/profile/connected-apps) in Zeplin. If a CLI token already exists, you should first revoke the existing and then generate a new one.
 2. Set `ZEPLIN_ACCESS_TOKEN` environment variable in your CI pipeline.
 
-CLI will try to validate the token on any action that require authentication, if the token is valid the action will halt with authentication error.
+CLI will try to validate the token on any action that require authentication, if the token is invalid the action will halt with an authentication error.
 
 You must unset the environment variable to login using other methods.
 

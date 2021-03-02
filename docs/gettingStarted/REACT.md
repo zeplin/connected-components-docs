@@ -105,7 +105,7 @@ In this example, we'll go with a `Button.jsx` file under `src/components`. Pick 
     "components": [
         {
             "path": "src/components/Button.jsx",
-            "zeplinNames": []
+            "zeplinIds": []
         }
     ]
 }
@@ -130,21 +130,21 @@ If you're using the Visual Studio Code extension, click the “Add component” 
 }
 ```
 
-Next up, we'll populate the `zeplinIds` or `zeplinNames` key.
+Next up, we'll populate the `zeplinIds` key.
 
 ### Connect to component from Zeplin
 
+It is recommended to use [Zeplin CLI initialize flow](./INITIALIZE.md) or use VS Code Extension to add `zeplinIds` into the configuration file.
+
 #### Manual configuration
 
-Now it's time to connect the React component we just added, to a component in Zeplin. We'll do that by adding the name of the component to the `zeplinNames` list.
+> **Using `zeplinNames` is deprecated in favor of `zeplinIds`. If you are looking for the older guide check out [here](https://github.com/zeplin/connected-components-docs/blob/3784a60ef460792fd9df8476986fea58bfc9e7fe/docs/gettingStarted/REACT.md).**
 
-> **`zeplinNames` is deprecated. It is recommended to use [Zeplin CLI initialize flow](./INITIALIZE.md) or use VS Code Extension to add `zeplinIds` into the configuration file. Alternatively, you can configure `zeplinNames` manually and then use VS Code Extension's `Migrate` command to convert all zeplinNames to zeplinIds later.**
+Now it's time to connect the React component we just added, to a component in Zeplin. We'll do that by adding component ids to the `zeplinIds` list.
 
-Let's open the styleguide (or the project) we added and copy the name of the component in Zeplin. In our example, our component's name is “Controls / Button / Primary”. Here's how it looks like in Zeplin:
+Open Zeplin's [Web app](https://app.zeplin.io) and navigate to the component you want to connect. Select the component and look for the URL in the address bar, which should look like: `https://app.zeplin.io/styleguide/5dd4166f2387f13fc8b27ace/components?coid=5dd41717b4eaa04034df4c6f`. The part after `coid=` is the identifier we're looking for, which is `5dd41717b4eaa04034df4c6f` on the last example.
 
-<img src="../../img/zeplinComponents.png" alt="Components in Zeplin" width="800" />
-
-Let's add this name to the `zeplinNames` list:
+Let's add this identifier to the `zeplinIds` list:
 
 ```json
 {
@@ -155,45 +155,37 @@ Let's add this name to the `zeplinNames` list:
     "components": [
         {
             "path": "src/components/Button.jsx",
-            "zeplinNames": [
-                "Controls / Button / Primary"
+            "zeplinIds": [
+                "5dd41717b4eaa04034df4c6f"
             ]
         }
     ]
 }
 ```
 
-Notice that in the screenshot above, we have two more states of the same button. It's possible connect a component in our codebase to multiple components in Zeplin—let's do that:
+It's possible connect a component in our codebase to multiple components in Zeplin—let's do that:
 
 ```json
 {
-…
-            "zeplinNames": [
-                "Controls / Button / Primary",
-                "Controls / Button / Primary, Hover",
-                "Controls / Button / Primary, Pressed"
+    "projects": [],
+    "styleguides": [
+        "5cd486b18a64c1414be004fb"
+    ],
+    "components": [
+        {
+            "path": "src/components/Button.jsx",
+            "zeplinIds": [
+                "5dd4171a6825f144e068f1c6",
+                "5dd41717b4eaa04034df4c6f",
+                "602f60b5dd16708b272ace28"
             ]
-…
+        }
+    ]
 }
 ```
-
-Also, you can define similarly named components in a more easy way by using a wildcard in `zeplinNames` array:
-
-```json
-{
-…
-            "zeplinNames": [
-                "Controls / Button / Primary*",
-            ]
-…
-}
-```
-
 #### Using VS Code Extension
 
 If you're using the Visual Studio Code extension, you can simply click “Connect to Zeplin component” and search for a component in Zeplin, directly within Visual Studio Code.
-
-**Congratulations, we just connected our first component!** 🎉
 
 Next up, we'll install and use Zeplin's CLI tool so that these connected components are visible in Zeplin to our team.
 
@@ -243,8 +235,8 @@ Now, we'll update our configuration file to use the plugin. We can do that by ad
     "components": [
         {
             "path": "src/components/Button.jsx",
-            "zeplinNames": [
-                "Controls / Button / Primary*"
+            "zeplinIds": [
+                "5dd41717b4eaa04034df4c6f"
             ]
         }
     ]
@@ -274,8 +266,8 @@ If our project use Typescript components, the plugin may fail to collect compone
     "components": [
         {
             "path": "src/components/Button.jsx",
-            "zeplinNames": [
-                "Controls / Button / Primary*"
+            "zeplinIds": [
+                "5dd41717b4eaa04034df4c6f"
             ]
         }
     ]
@@ -314,6 +306,8 @@ npm run zeplin-connect
 Now head back to Zeplin and click on one of the components you connected. You should see an output similar to this:
 
 <img src="../../img/zeplinConnectedComponent-react.png" alt="Connected component in Zeplin" width="600" />
+
+**Congratulations, we just connected our first component!** 🎉
 
 For further information on how components are analyzed by the React plugin, check out the [repository][Zeplin CLI React Plugin].
 

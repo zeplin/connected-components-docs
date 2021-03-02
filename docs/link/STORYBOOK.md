@@ -73,14 +73,14 @@ Here's our sample configuration file with two components:
     "components": [
         {
             "path": "src/components/Button/Button.js",
-            "zeplinNames": [
-                "Controls / Button / Primary"
+            "zeplinIds": [
+                "5dd41717b4eaa04034df4c6f",
             ]
         },
         {
             "path": "src/components/TextField/TextField.js",
-            "zeplinNames": [
-                "Controls / Text field / Primary"
+            "zeplinIds": [
+                "5dd4171a6825f144e068f1c6",
             ]
         }
     ]
@@ -101,9 +101,9 @@ If none of these options work for you, it's also possible to manually match comp
     "components": [
         {
             "path": "src/components/Button/Button.js",
-            "zeplinNames": [
-                "Controls / Button / Primary"
-            ],
+            "zeplinIds": [
+                "5dd41717b4eaa04034df4c6f",
+            ]
             "storybook": {
                 "kind": "Design System/Button",
                 "stories": [
