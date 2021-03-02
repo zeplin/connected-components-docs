@@ -27,9 +27,11 @@ Once you connect your components, check out these follow-up guides:
 - [Adding Styleguidist links](docs/link/STYLEGUIDIST.md)
 - [Test your changes locally](docs/gettingStarted/TEST_LOCALLY.md)
 
-## Configuration file documentation
+Other related documents:
 
-For details on how to work with the `.zeplin/components.json` configuration file, check out the [Configuration file documentation](docs/CONFIGURATION_FILE.md).
+- [Authentication](docs/AUTHENTICATION.md)
+- [Troubleshooting](docs/Troubleshooting.md)
+- [Configuration file details](docs/CONFIGURATION_FILE.md)
 
 ## Plugins
 
