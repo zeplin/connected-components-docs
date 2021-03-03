@@ -8,15 +8,16 @@ After connecting your components in Zeplin to your components in code, you'll be
 
 ## Getting started
 
-For details on how to use Connected Components in Zeplin, check out our getting started guides for various platforms/frameworks:
+To get started, check out the quick start guide:
+
+- [Quick start guide](docs/gettingStarted/QUICK_START.md)
+
+For more details, see our manual configuration guides for specific frameworks/platforms:
 
 - [React](docs/gettingStarted/REACT.md)
 - [Vue.js](docs/gettingStarted/VUE.md)
 - [Angular](docs/gettingStarted/ANGULAR.md)
 - [iOS/macOS with Swift](docs/gettingStarted/SWIFT.md)
-- [React Native](docs/gettingStarted/REACT.md)
-
-**If your platform/framework is not listed here**, you can still use Connected Components—check out our [getting started guide for all platforms/frameworks](docs/gettingStarted/ALL.md).
 
 Once you connect your components, check out these follow-up guides:
 
@@ -26,9 +27,11 @@ Once you connect your components, check out these follow-up guides:
 - [Adding Styleguidist links](docs/link/STYLEGUIDIST.md)
 - [Test your changes locally](docs/gettingStarted/TEST_LOCALLY.md)
 
-## Configuration file documentation
+Other related documents:
 
-For details on how to work with the `.zeplin/components.json` configuration file, check out the [Configuration file documentation](/CONFIGURATION_FILE.md).
+- [Authentication](docs/AUTHENTICATION.md)
+- [Troubleshooting](docs/Troubleshooting.md)
+- [Configuration file details](docs/CONFIGURATION_FILE.md)
 
 ## Plugins
 

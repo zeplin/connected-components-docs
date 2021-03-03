@@ -20,14 +20,14 @@ Here's our sample configuration file with two React components:
     "components": [
         {
             "path": "src/components/Button/Button.jsx",
-            "zeplinNames": [
-                "Controls / Button / Primary"
+            "zeplinIds": [
+                "5dd41717b4eaa04034df4c6f",
             ]
         },
         {
             "path": "src/components/TextField/TextField.jsx",
-            "zeplinNames": [
-                "Controls / Text field / Primary"
+            "zeplinIds": [
+                "5dd4171a6825f144e068f1c6",
             ]
         }
     ]
@@ -66,8 +66,8 @@ Let's now define the Styleguidist names for the two components in our configurat
     "components": [
         {
             "path": "src/components/Button/Button.jsx",
-            "zeplinNames": [
-                "Controls / Button / Primary"
+            "zeplinIds": [
+                "5dd41717b4eaa04034df4c6f",
             ],
             "styleguidist": {
                 "name": "button"
@@ -75,8 +75,8 @@ Let's now define the Styleguidist names for the two components in our configurat
         },
         {
             "path": "src/components/TextField/TextField.jsx",
-            "zeplinNames": [
-                "Controls / Text field / Primary"
+            "zeplinIds": [
+                "5dd4171a6825f144e068f1c6",
             ],
             "styleguidist": {
                 "name": "textfield"

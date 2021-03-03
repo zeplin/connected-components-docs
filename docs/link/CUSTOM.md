@@ -22,14 +22,14 @@ In this example, we'll add links to our design system documentation on (1) Confl
     "components": [
         {
             "path": "src/components/Button/Button.jsx",
-            "zeplinNames": [
-                "Controls / Button / Primary"
+            "zeplinIds": [
+                "5dd4171a6825f144e068f1c6",
             ]
         },
         {
             "path": "src/components/TextField/TextField.jsx",
-            "zeplinNames": [
-                "Controls / Text field / Primary"
+            "zeplinIds": [
+                "5dd41717b4eaa04034df4c6f",
             ]
         }
     ]
@@ -70,8 +70,8 @@ Let's now define the URL paths for the two components in our configuration file.
     "components": [
         {
             "path": "src/components/Button/Button.jsx",
-            "zeplinNames": [
-                "Controls / Button / Primary"
+            "zeplinIds": [
+                "5dd4171a6825f144e068f1c6",
             ],
             "confluence": {
                 "urlPath": "260407436/Button"
@@ -79,8 +79,8 @@ Let's now define the URL paths for the two components in our configuration file.
         },
         {
             "path": "src/components/TextField/TextField.jsx",
-            "zeplinNames": [
-                "Controls / Text field / Primary"
+            "zeplinIds": [
+                "5dd41717b4eaa04034df4c6f",
             ],
             "confluence": {
                 "urlPath": "260407439/Text+field"
@@ -136,8 +136,8 @@ Similar to Confluence, we'll now define the URL paths for Notion. Note that we d
     "components": [
         {
             "path": "src/components/Button/Button.jsx",
-            "zeplinNames": [
-                "Controls / Button / Primary"
+            "zeplinIds": [
+                "5dd41717b4eaa04034df4c6f",
             ],
             "confluence": {
                 "urlPath": "260407436/Button"
@@ -145,8 +145,8 @@ Similar to Confluence, we'll now define the URL paths for Notion. Note that we d
         },
         {
             "path": "src/components/TextField/TextField.jsx",
-            "zeplinNames": [
-                "Controls / Text field / Primary"
+            "zeplinIds": [
+                "5dd4171a6825f144e068f1c6",
             ],
             "confluence": {
                 "urlPath": "260407439/Text+field"
