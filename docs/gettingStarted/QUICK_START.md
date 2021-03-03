@@ -40,7 +40,7 @@ npx @zeplin/cli connect initialize \
     --component-id 5dd417142dff493fc295dda1
 ```
 
-We'll now simply follow the instructions. Initially, CLI will ask you to authenticate. Once you're logged in, CLI should ask you to select the component file in your codebase to connect to. Once you do, the configuration file (`.zeplin/components.json`) will be created file and required packages will be installed.
+We'll now simply follow the instructions. Initially, CLI will ask you to authenticate. Once you're logged in, CLI should ask you to select the component file in your codebase to connect to. Once you do, the configuration file (`.zeplin/components.json`) will be created and required packages will be installed.
 
 <img src="../../img/zeplinInitialization.gif" alt="Initialize flow" width="800" />
 
