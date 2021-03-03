@@ -126,9 +126,9 @@ Rinse and repeat until you're done connecting all the component you need to!
 
 _Using `initialize` command will fallback to `add-components` if you have an existing `.zeplin/components.json` and vice versa._
 
-### Using VS Code extension
+### Using VS Code Extension
 
-You can also use the [Zeplin Visual Studio Code extension](https://zpl.io/vscode-extension) to manage the `.zeplin/components.json` file. It simplifies adding more and managing components in the configuration file.
+You can also use the [Zeplin Visual Studio Code Extension](https://zpl.io/vscode-extension) to manage the `.zeplin/components.json` file. It simplifies adding more and managing components in the configuration file.
 
 - Open the configuration file in VS Code and notice that there are links on top of the various fields:
 <img src="../../img/zeplinVSCodeExtension.png" alt="Zeplin VS Code Extension" width="800" />
