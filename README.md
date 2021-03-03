@@ -8,11 +8,11 @@ After connecting your components in Zeplin to your components in code, you'll be
 
 ## Getting started
 
-For details on how to use Connected Components in Zeplin, check out our quick start documentation:
+To get started, check out the quick start guide:
 
-- [Quick start with Connected Components](docs/gettingStarted/QUICK_START.md)
+- [Quick start guide](docs/gettingStarted/QUICK_START.md)
 
-Manual configuration guides:
+For more details, see our manual configuration guides for specific frameworks/platforms:
 
 - [React](docs/gettingStarted/REACT.md)
 - [Vue.js](docs/gettingStarted/VUE.md)

@@ -1,5 +1,5 @@
 ### Table of Contents
-- [Quick Start with Connected Components](#getting-started-with-connected-components)
+- [Connected Components Quick Start Guide](#getting-started-with-connected-components)
   * [Table of Contents](#table-of-contents)
   * [Requirements](#requirements)
   * [Connecting the first component](#connecting-the-first-component)
@@ -12,7 +12,7 @@
   * [Add links (Optional)](#add-links-optional)
 - [Troubleshooting](#troubleshooting)
 
-# Quick Start with Connected Components
+# Connected Components Quick Start Guide
 
 This guide covers how to get started with Connected Components for React, Angular, Vue.js interactively.
 
@@ -20,19 +20,19 @@ This guide covers how to get started with Connected Components for React, Angula
 
 [node 10+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) must be installed on your system.
 
-## Connecting the first component
+## Connecting your first component
 
-Open Zeplin, navigate to the components page of our project or styleguide and select a component that we want to connect.
+In Zeplin, navigate to the Components page of a styleguide or project and select a component to connect.
 
 <img src="../../img/zeplinConnectToCode.png" alt="Click on Connect To Code button" width="800" />
 
-We click on _Connect to Code_ button. Now, Zeplin will show us a command sample to connect this component. While `--project-id <projectId>` or `--styleguide-id <styleguideId>` parameters are based on what Zeplin resource we are navigating, `--component-id <componentId>` represents the component we have selected.
+We'll now click on _Connect to Code_ button on the right panel. Zeplin will display a command  to connect this component. While `--project-id <projectId>` or `--styleguide-id <styleguideId>` parameters are based on the project/styleguide we're in, `--component-id <componentId>` represents the component we have selected.
 
-Clicking on the command will copy it to the clipboard.
+Click on the command and it will be copied it to your clipboard.
 
 <img src="../../img/zeplinConnectToCodePrompt.png" alt="Connected Components initialize command" width="800" />
 
-Open a terminal and navigate to the source code project folder, paste and execute the command.
+We'll now open the Terminal app and navigate to the folder where source code is, then paste and execute the command.
 
 ```sh
 npx @zeplin/cli connect initialize \
@@ -40,27 +40,29 @@ npx @zeplin/cli connect initialize \
     --component-id 5dd417142dff493fc295dda1
 ```
 
-We follow the instructions, CLI will ask us to authenticate(../lin/) and select a component file. Finally, CLI will create `.zeplin/components.json` file in our project and install required the packages.
+We'll now simply follow the instructions. Initially, CLI will ask you to authenticate. Once you're logged in, CLI should ask you to select the component file in your codebase to connect to. Once you do, the configuration file (`.zeplin/components.json`) will be created file and required packages will be installed.
 
 <img src="../../img/zeplinInitialization.gif" alt="Initialize flow" width="800" />
 
-**Congratulations, we just connected our first component!** 🎉
+**Voilà, we just connected our first component!** 🎉
 
-Now we can go back to Zeplin and see that our component enriched with links! Based on our project type, the component may have a description and code snippet.
+Now let's head back to Zeplin and check out component! Based on the project type, the component may have a description and code snippet that should look like this:
 
 <img src="../../img/zeplinConnectedComponent-react.png" alt="Connected component" width="800" />
 
 ### Project types
 
-Initialize command can detect the project type and install related CLI plugins and enrich Connected Components even more. As of now, the following project types are supported. Check the links for configuration details about each plugin.
+The initialize command we just ran detects your project type and installs related CLI plugins. As of now, the following project types are supported:
  - [React](https://github.com/zeplin/cli-connect-react-plugin)
  - [Angular](https://github.com/zeplin/cli-connect-angular-plugin)
  - [Vue.js](https://github.com/johntips/storybook-vue-zeplin)
  - [Storybook](https://github.com/zeplin/cli-connect-storybook-plugin)
 
+ If necessary, check out the links for plugins more configuration details.
+
 ## Inspect the configuration file
 
-Open `.zeplin/components.json` on your source code project. Its content will be something similar to the below example.
+As mentioned above, the initialize command creates a configuration file—let's see how it looks like. Open the new `.zeplin/components.json` file in your repository. It should look similar to this:
 
 ```json
 {
@@ -90,29 +92,29 @@ Open `.zeplin/components.json` on your source code project. Its content will be 
 }
 ```
 
-- `projects` and `styleguides` keys are the identifiers of projects and styleguides we'll use components from.
-- `plugins` contain the module name of the plugins, which should be invoked while CLI processing our components. Each plugin may have its own custom configuration under `config` key.
-- `components` are the React component files in our codebase. `zeplinIds` are the component IDs in Zeplin that CLI will connect the component file. We may alternatively use deprecated `zeplinNames` field instead of `zeplinIds` to connect components.
+- `projects` and `styleguides` keys are the identifiers of projects and styleguides we'll connect components from.
+- `plugins` contain the module name of the plugins that the CLI uses to process our components. Each plugin may have its own custom configuration under `config` key.
+- `components` are the component files in our codebase. `zeplinIds` are the component IDs in Zeplin that the component connect to. You can alternatively use the `zeplinNames` key (instead of `zeplinIds`) to connect components using their names in Zeplin.
 
 Check [CONFIGURATION_FILE.md](../CONFIGURATION_FILE.md) for more details.
 
 ## Update Connected Components
 
-Executing `zeplin connect` (or `npm run zeplin-connect` if Zeplin CLI packages are installed locally) will process the configuration/component files again, and update our Connected Components on Zeplin.
+Executing `zeplin connect` (or `npm run zeplin-connect` if Zeplin CLI packages are installed locally) will process the configuration/component files again, and update our Connected Components in Zeplin.
 
-We may add a task into our CI/CD pipeline to update Connected Components every time a change has happened on our source code.
+You can add a task into your CI/CD pipeline to update Connected Components every time your component source code changes.
 
 ## Connecting more components
 
-After we initialize Connected Components, we can use `zeplin connect add-components` (or `npm run zeplin-connect add-components` if Zeplin CLI packages are installed locally) command to connect more components to Zeplin interactively.
+After initializing Connected Components, you can use the `zeplin connect add-components` (or `npm run zeplin-connect add-components` if Zeplin CLI packages are installed locally) command to connect more components to Zeplin interactively.
 
-It is possible to add components from other Zeplin projects or styleguides into the same configuration file. If you're using [Global Styleguides](https://blog.zeplin.io/announcing-global-styleguides-connecting-design-systems-to-engineering-65ad22bd0076), adding your components using IDs of styleguide(s) will be enough. The connected component will show up on the parent Zeplin project or styleguide(s) as well.
+It is possible to add components from other Zeplin projects or styleguides into the same configuration file. If you're using [Global Styleguides](https://blog.zeplin.io/announcing-global-styleguides-connecting-design-systems-to-engineering-65ad22bd0076), adding your components using the IDs of styleguide(s) will be enough. Connected Components will show up on parent Zeplin styleguide(s) as well.
 
-### Using CLI command
+### Using CLI
 
-Open Zeplin and select a component that is not connected yet. Click on _Connect to Code_ button again. This time, Zeplin will us the command add this component to the existing Connected Component configuration (Notice that the only difference is `add-components` instead of `initialize`)
+Open Zeplin and select another component that is not connected yet. Click on the _Connect to Code_ button again. This time, Zeplin will display the command to add this component to the existing Connected Component configuration. (Notice that the only difference is the `add-components` parameter, instead of `initialize`.)
 
-Paste and execute the command on our source code project. CLI will add this project or styleguide and the component to `.zeplin/component.json` file
+Similary, paste and execute the command. This component will now be added to the configuration file as well.
 
 ```sh
 npx @zeplin/cli connect add-components \
@@ -120,27 +122,25 @@ npx @zeplin/cli connect add-components \
     --component-id 5dd417142dff493fc295dce5
 ```
 
-Rinse and repeat until connecting all components!
+Rinse and repeat until you're done connecting all the component you need to!
 
 _Using `initialize` command will fallback to `add-components` if you have an existing `.zeplin/components.json` and vice versa._
 
-### Using VS Code Extension
+### Using VS Code extension
 
-We can use [Zeplin Visual Studio Code extension](https://zpl.io/vscode-extension) to manage the `.zeplin/components.json` file. It simplifies adding more components into the configuration configure and connect more
-components.
+You can also use the [Zeplin Visual Studio Code extension](https://zpl.io/vscode-extension) to manage the `.zeplin/components.json` file. It simplifies adding more and managing components in the configuration file.
 
-The extension will detect the existence of `.zeplin/components.json` file automatically.
-- Open the file in VSCode, notice that there are code lens actions on the configuration fields
-<img src="../../img/zeplinVSCodeExtension.png" alt="Zeplin VSCode Extension" width="800" />
-- Click the _Add component_ link which will list all the files in your repository, and then select the file. Extension will add a new component object into the configuration file.
-- Click _Connect to Zeplin component_ on the created component, it will show all commponents in your project or styleguidein Zeplin. We may search for a component name, and select multiple components for a single component.
+- Open the configuration file in VS Code and notice that there are links on top of the various fields:
+<img src="../../img/zeplinVSCodeExtension.png" alt="Zeplin VS Code Extension" width="800" />
+- Click the _Add component_ link which will list all the files in your repository, and then select the file. The component you select will be added to the configuration file.
+- Click _Connect to Zeplin component_ on component you just added and the extension will list all the components in your project or styleguide in Zeplin. Search for the component by its name (select multiple components if necessary) and connect them!
 
 
 ## Add links (Optional)
 
 Connected Components also lets you add links to various sources like your Storybook, repository, wiki and so on. In the screenshot above, notice that we have links to GitHub and Storybook.
 
-Zeplin CLI will try to configure Storybook and git repository automatically, if it couldn't for your source code project, check out these guides to add links:
+Zeplin CLI will try to configure Storybook and git repository links automatically. If you don't see those links, check out these guides to add them:
 
 - [Adding Storybook links](../link/STORYBOOK.md)
 - [Adding Styleguidist links](../link/STYLEGUIDIST.md)
