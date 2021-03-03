@@ -9,7 +9,7 @@
 
 In this guide, we'll talk about how to authenticate using the Zeplin CLI.
 
-CLI commands will automatically prompty you to authenticate if the command requires so, otherwise you can always use `zeplin login` command to authenticate without taking any action. There are 3 ways to authenticate:
+CLI commands will automatically prompt you to authenticate if the command requires so, otherwise you can always use `zeplin login` command to authenticate without taking any action. There are 3 ways to authenticate:
 
 ## Using existing browser session
 
