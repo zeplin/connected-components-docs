@@ -40,7 +40,7 @@ To login using other methods, simply unset the environment variable.
 You can also use your Zeplin username/password to authenticate.
 
 1. Run the following command on terminal.
-```
+```sh
 zeplin login --no-browser
 ```
 2. Type in your username and password.
