@@ -46,7 +46,7 @@ We'll now simply follow the instructions. Initially, CLI will ask you to authent
 
 **Voilà, we just connected our first component!** 🎉
 
-Now let's head back to Zeplin and check out component! Based on the project type, the component may have a description and code snippet that should look like this:
+Now let's head back to Zeplin and check out the component! Based on the project type, the component may have a description and code snippet that should look like this:
 
 <img src="../../img/zeplinConnectedComponent-react.png" alt="Connected component" width="800" />
 
