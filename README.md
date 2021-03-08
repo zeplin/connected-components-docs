@@ -30,7 +30,7 @@ Once you connect your components, check out these follow-up guides:
 Other related documents:
 
 - [Authentication](docs/AUTHENTICATION.md)
-- [Troubleshooting](docs/Troubleshooting.md)
+- [Troubleshooting](docs/TROUBLESHOOTING.md)
 - [Configuration file details](docs/CONFIGURATION_FILE.md)
 
 ## Plugins
