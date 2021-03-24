@@ -130,8 +130,7 @@ _Using `initialize` command will fallback to `add-components` if you have an exi
 
 You can also use the [Zeplin Visual Studio Code Extension](https://zpl.io/vscode-extension) to manage the `.zeplin/components.json` file. It simplifies adding more and managing components in the configuration file.
 
-- Open the configuration file in VS Code and notice that there are links on top of the various fields:
-<img src="../../img/zeplinVSCodeExtension.png" alt="Zeplin VS Code Extension" width="800" />
+- Open the configuration file in VS Code and notice that there are links on top of the various fields: <img src="../../img/zeplinVSCodeExtension.png" alt="Zeplin VS Code Extension" width="800" />
 - Click the _Add component_ link which will list all the files in your repository, and then select the file. The component you select will be added to the configuration file.
 - Click _Connect to Zeplin component_ on component you just added and the extension will list all the components in your project or styleguide in Zeplin. Search for the component by its name (select multiple components if necessary) and connect them!
 
