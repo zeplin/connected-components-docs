@@ -131,7 +131,7 @@ Next up, we'll populate the `zeplinIds` key.
 
 ### Connect to component from Zeplin
 
-It is recommended to use [Zeplin CLI initialize flow](./INITIALIZE.md) or use VS Code Extension to add `zeplinIds` into the configuration file.
+It is recommended to use [Zeplin CLI initialize flow](./QUICK_START.md) or use VS Code Extension to add `zeplinIds` into the configuration file.
 
 #### Manual configuration
 
