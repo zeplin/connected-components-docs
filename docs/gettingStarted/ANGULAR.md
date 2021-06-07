@@ -25,7 +25,7 @@
 
 This guide covers how to get started with Connected Components for Angular components.
 
-> **👀 We simplified the Connected Components experience, you can now get it running within minutes. [Check this document for details.](./INITIALIZE.md)**
+> **👀 We simplified the Connected Components experience, you can now get it running within minutes. [Check this document for details.](./QUICK_START.md)**
 
 ## 1. Prepare configuration file
 
@@ -133,7 +133,7 @@ Next up, we'll populate the `zeplinIds` key.
 
 ### Connect to component from Zeplin
 
-It is recommended to use [Zeplin CLI initialize flow](./INITIALIZE.md) or use VS Code Extension to add `zeplinIds` into the configuration file.
+It is recommended to use [Zeplin CLI initialize flow](./QUICK_START.md) or use VS Code Extension to add `zeplinIds` into the configuration file.
 
 #### Manual configuration
 
