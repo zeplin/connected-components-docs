@@ -93,6 +93,8 @@ Otherwise, Storybook plugin will attempt to match the `component` properties of 
 
 Finally, Storybook plugin will attempt to match the display names of stories with the components names in our configuration file. In the example above, Zeplin will automatically display links to stories with display name set to “Button”, “TextField”, “Design System/Button”, “Design System/TextField” and so on.
 
+### Manual configuration
+
 If none of these options work for you, it's also possible to manually match components with their stories. To demonstrate this, let's set the `storybook` property for our button component and define the story kind and names, like so:
 
 ```jsonc
