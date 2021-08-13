@@ -113,7 +113,7 @@ If none of these options work for you, it's also possible to manually match comp
             "path": "src/components/Button/Button.js",
             "zeplinIds": [
                 "5dd41717b4eaa04034df4c6f",
-            ]
+            ],
             "storybook": {
                 "kind": "Design System/Button",
                 "stories": [
