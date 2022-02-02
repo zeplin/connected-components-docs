@@ -31,6 +31,14 @@ If you are getting permission errors regardless of your role, please check that 
 
 The plugin you are using could not parse or find a definition of a component. This is a common issue for React component as there are many ways to compose a component and some of these methods are not supported by `react-docgen` or `react-docgen-typescript`. Please check [React plugin documentation for details](https://github.com/zeplin/cli-connect-react-plugin).
 
+### Cannot overwrite Connected Components
+
+Zeplin supports connecting components through the CLI and Zeplin apps. 
+Mistakenly using CLI can overwrite the setup done via Zeplin apps. 
+To prevent unwanted overwrites, if the latest change done via Zeplin apps, CLI warns with `Latest Connected Components update is done via Zeplin apps, you can set --force to overwrite it.` message and exists without overwriting.
+If you wish to continue by overwriting the latest change done via Zeplin apps, you can use `--force` option.
+Please check [the support article](https://zpl.io/article/storybook-integration) to learn more about Zeplin Storybook integration.
+
 ## Storybook
 
 ### Storybook links are not found
