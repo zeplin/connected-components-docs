@@ -27,7 +27,7 @@ This guide covers how to get started with Connected Components for Vue.js compon
 
 > **👀 We simplified the Connected Components experience, you can now get it running within minutes. [Check this document for details.](./QUICK_START.md)**
 
-> **We also provide a graphical interface via Zeplin apps for Storybook integration. Check out [this article](https://zpl.io/article/storybook-integration) to learn more.**
+> **Zeplin provides an easier way to connect components using **Storybook integration**, if your Vue components already have corresponding stories in a Storybook environment. Check out [this article](https://zpl.io/article/storybook-integration) to learn more.**
 
 ## 1. Prepare configuration file
 

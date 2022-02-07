@@ -33,10 +33,11 @@ The plugin you are using could not parse or find a definition of a component. Th
 
 ### Cannot overwrite Connected Components
 
-Zeplin supports connecting components through the CLI and Zeplin apps. 
-Mistakenly using CLI can overwrite the setup done via Zeplin apps. 
-To prevent unwanted overwrites, if the latest change done via Zeplin apps, CLI warns with `Latest Connected Components update is done via Zeplin apps, you can set --force to overwrite it.` message and exists without overwriting.
-If you wish to continue by overwriting the latest change done via Zeplin apps, you can use `--force` option.
+[Storybook integration](https://blog.zeplin.io/storybook-and-zeplin-a-new-integration-228951e336e9) uses the same infrastructure as Connected Components. Using both at the same time may cause CLI to overwrite the latest changes made using the Storybook integration.
+
+If the latest change is made with the Storybook integration on Zeplin apps, executing `zeplin connect` command prints a warning message and exits to prevent a possible overwrite.
+You may use `--force` flag to enforce the overwrite operation on Zeplin CLI.
+
 Please check [the support article](https://zpl.io/article/storybook-integration) to learn more about Zeplin Storybook integration.
 
 ## Storybook
